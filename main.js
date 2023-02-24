@@ -61,6 +61,59 @@ async function buttonClick() {
         document.getElementById("score_f" + String(i)).textContent = scores_f[i];
         document.getElementById("score_e" + String(i)).textContent = scores_e[i];
     }
+
+    // 相手のポケモンたちの情報取得のためのリンク
+    var links = document.getElementById('links');
+    var tr = links.insertRow(-1);
+    var td = tr.insertCell(-1);
+    var td = tr.insertCell(-1);
+    td.textContent = "H";
+    var td = tr.insertCell(-1);
+    td.textContent = "A";
+    var td = tr.insertCell(-1);
+    td.textContent = "B";
+    var td = tr.insertCell(-1);
+    td.textContent = "C";
+    var td = tr.insertCell(-1);
+    td.textContent = "D";
+    var td = tr.insertCell(-1);
+    td.textContent = "S";
+
+    for (let i = 0; i < enemies.length; i++) {
+        var tr = links.insertRow(-1);
+
+        var td = tr.insertCell(-1);
+        td.textContent = document.getElementById("e" + String(i)).value;
+
+        var stats = await getStats(enemies[i]);
+        for (const stat of stats) {
+            var td = tr.insertCell(-1);
+            td.textContent = String(stat);
+            if (stat >= 120) {
+                td.style.backgroundColor = "#ff4444";
+            } else if (stat >= 100) {
+                td.style.backgroundColor = "#ff6666";
+            } else if (stat >= 80) {
+                td.style.backgroundColor = "#ff8888";
+            } else if (stat >= 60) {
+                td.style.backgroundColor = "#ffaaaa";
+            }
+        }
+
+        var td = tr.insertCell(-1);
+        var a = document.createElement('a');
+        td.appendChild(a);
+        var linkText = document.createTextNode("DB");
+        a.appendChild(linkText);
+        a.href = "https://sv.pokedb.tokyo/pokemon/show/" + String(pokedex[document.getElementById("e" + String(i)).value]["id"]).padStart(4, "0") + "-00";
+
+        var td = tr.insertCell(-1);
+        var a = document.createElement('a');
+        td.appendChild(a);
+        var linkText = document.createTextNode("Wiki");
+        a.appendChild(linkText);
+        a.href = "https://latest.pokewiki.net/" + document.getElementById("e" + String(i)).value;
+    }
 }
 
 function getType(name) {
@@ -75,6 +128,21 @@ function getType(name) {
             types.push(type.type.name)
         }
         return types;
+    })
+}
+
+function getStats(name) {
+    return fetch("https://pokeapi.co/api/v2/pokemon/" + name, {
+    }).then(response => {
+        return response.json();
+    }).then(response => {
+        console.log(name);
+        console.log(response);
+        stats = []
+        for (stat of response.stats) {
+            stats.push(stat.base_stat)
+        }
+        return stats;
     })
 }
 
