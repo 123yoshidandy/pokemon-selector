@@ -64,6 +64,10 @@ async function buttonClick() {
 
     // 相手のポケモンたちの情報取得のためのリンク
     var links = document.getElementById('links');
+    while (links.rows.length > 0) {
+        links.deleteRow(-1);
+    }
+
     var tr = links.insertRow(-1);
     var td = tr.insertCell(-1);
     var td = tr.insertCell(-1);
@@ -200,6 +204,32 @@ function getEffective(types_atk, types_def) {
 
 function type2id(type) {
     return ["normal", "fire", "water", "electric", "grass", "ice", "fighting", "poison", "ground", "flying", "psychic", "bug", "rock", "ghost", "dragon", "dark", "steel", "fairy"].indexOf(type);
+}
+
+function onKazuki() {
+    for (let i = 0; i < 6; i++) {
+        document.getElementById("score_f" + String(i)).textContent = "";
+        document.getElementById("score_e" + String(i)).textContent = "";
+    }
+    document.getElementById("f0").value = "カイリュー";
+    document.getElementById("f1").value = "セグレイブ";
+    document.getElementById("f2").value = "デカヌチャン";
+    document.getElementById("f3").value = "キノガッサ";
+    document.getElementById("f4").value = "サーフゴー";
+    document.getElementById("f5").value = "ハバタクカミ";
+}
+
+function onMayuka() {
+    for (let i = 0; i < 6; i++) {
+        document.getElementById("score_f" + String(i)).textContent = "";
+        document.getElementById("score_e" + String(i)).textContent = "";
+    }
+    document.getElementById("f0").value = "ガブリアス";
+    document.getElementById("f1").value = "ドドゲザン";
+    document.getElementById("f2").value = "ハッサム";
+    document.getElementById("f3").value = "サーフゴー";
+    document.getElementById("f4").value = "テツノツツミ";
+    document.getElementById("f5").value = "グレンアルマ";
 }
 
 function onReset1() {
