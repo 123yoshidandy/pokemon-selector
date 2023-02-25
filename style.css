@@ -1,7 +1,7 @@
 body {
     margin: auto;
     text-align:center;
-    font-size:20px;
+    font-size:30px;
 }
 
 table {
@@ -11,6 +11,10 @@ table {
 
 td {
     text-align:center;
+}
+
+input {
+    font-size: 80%;
 }
 
 .form {
