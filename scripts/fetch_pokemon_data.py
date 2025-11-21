@@ -130,8 +130,7 @@ class PokemonHomeAPI:
                     result['single']['ranking'] = ranking_data
                     pokemon_list = ranking_data.get('pokemon', [])[:30]
 
-                # 詳細データ取得は403エラーになるため、現在はスキップ
-                # 将来的にAPIアクセスが可能になった場合に有効化
+                # 詳細データ取得（別ページから取得する必要があるため後で実装）
                 result['single']['details'] = []
 
         # ダブルバトルのデータを取得
@@ -152,8 +151,7 @@ class PokemonHomeAPI:
                     result['double']['ranking'] = ranking_data
                     pokemon_list = ranking_data.get('pokemon', [])[:30]
 
-                # 詳細データ取得は403エラーになるため、現在はスキップ
-                # 将来的にAPIアクセスが可能になった場合に有効化
+                # 詳細データ取得（別ページから取得する必要があるため後で実装）
                 result['double']['details'] = []
 
         return result

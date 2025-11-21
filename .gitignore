@@ -2,6 +2,9 @@
 .claude/
 CLAUDE.md
 
+# Temporary files
+tmp/
+
 # Node
 .node-version
 node_modules/
