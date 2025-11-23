@@ -40,4 +40,4 @@ jobs:
         git config --global user.email "action@github.com"
         git config --global user.name "GitHub Action"
         git add data/
-        git commit -m "Update Pokemon HOME data - $(date +'%Y-%m-%d %H:%M JST' --utc --date='9 hours')" && git push
+        git diff --cached --quiet || (git commit -m "Update Pokemon HOME data - $(date +'%Y-%m-%d %H:%M JST' --utc --date='9 hours')" && git push)
