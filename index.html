@@ -176,7 +176,6 @@
                             <select id="sim-attacker-pokemon" class="pokemon-select">
                                 <option value="">ポケモンを選択</option>
                             </select>
-                            <input type="number" id="sim-attacker-level" placeholder="レベル" value="50" min="1" max="100">
                             <select id="sim-attacker-move" class="move-select">
                                 <option value="">技を選択</option>
                             </select>
@@ -192,7 +191,6 @@
                             <select id="sim-defender-pokemon" class="pokemon-select">
                                 <option value="">ポケモンを選択</option>
                             </select>
-                            <input type="number" id="sim-defender-level" placeholder="レベル" value="50" min="1" max="100">
                             <div class="stat-inputs">
                                 <h4>ステータス</h4>
                                 <input type="number" id="sim-defender-hp" placeholder="HP" min="1" max="999">
@@ -220,76 +218,211 @@
 
                 <div class="damage-calculator-full">
                     <div class="calc-setup">
-                        <div class="calc-attacker">
-                            <h3>攻撃側の設定</h3>
-                            <div class="calc-input-group">
-                                <label>ポケモン</label>
+                        <!-- 攻撃側の詳細設定 -->
+                        <div class="calc-panel calc-attacker">
+                            <h3>攻撃側</h3>
+
+                            <!-- ポケモン選択 -->
+                            <div class="calc-pokemon-section">
                                 <select id="calc-attacker-pokemon" class="pokemon-select">
                                     <option value="">ポケモンを選択</option>
                                 </select>
+                                <div class="pokemon-info">
+                                    <span id="calc-attacker-types" class="type-display"></span>
+                                </div>
                             </div>
-                            <div class="calc-input-group">
-                                <label>技</label>
+
+                            <!-- ステータス設定 -->
+                            <div class="calc-stats-section">
+                                <h4>ステータス設定</h4>
+                                <div class="stats-grid">
+                                    <div class="stat-input-group" style="grid-column: 1 / -1;">
+                                        <label>性格</label>
+                                        <select id="calc-attacker-nature">
+                                            <option value="neutral">無補正</option>
+                                            <option value="adamant">いじっぱり(攻撃↑特攻↓)</option>
+                                            <option value="modest">ひかえめ(特攻↑攻撃↓)</option>
+                                            <option value="jolly">ようき(素早↑特攻↓)</option>
+                                            <option value="timid">おくびょう(素早↑攻撃↓)</option>
+                                            <option value="brave">ゆうかん(攻撃↑素早↓)</option>
+                                            <option value="quiet">れいせい(特攻↑素早↓)</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <!-- HP以外のステータス -->
+                                <div class="detailed-stats">
+                                    <div class="stat-detail">
+                                        <label>攻撃</label>
+                                        <input type="number" class="iv-input" id="calc-attacker-atk-iv" placeholder="個体値" value="31" min="0" max="31">
+                                        <input type="number" class="ev-input" id="calc-attacker-atk-ev" placeholder="努力値" value="252" min="0" max="252">
+                                        <span class="actual-stat" id="calc-attacker-atk-actual">実数値: -</span>
+                                    </div>
+                                    <div class="stat-detail">
+                                        <label>特攻</label>
+                                        <input type="number" class="iv-input" id="calc-attacker-spatk-iv" placeholder="個体値" value="31" min="0" max="31">
+                                        <input type="number" class="ev-input" id="calc-attacker-spatk-ev" placeholder="努力値" value="0" min="0" max="252">
+                                        <span class="actual-stat" id="calc-attacker-spatk-actual">実数値: -</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- 技選択 -->
+                            <div class="calc-move-section">
+                                <h4>技選択</h4>
                                 <select id="calc-move" class="move-select">
                                     <option value="">技を選択</option>
                                 </select>
-                            </div>
-                            <div class="calc-stats">
-                                <h4>能力値</h4>
-                                <div class="stat-row">
-                                    <label>レベル</label>
-                                    <input type="number" id="calc-attacker-level" value="50" min="1" max="100">
+                                <div class="move-info">
+                                    <span id="calc-move-type" class="type-display"></span>
+                                    <span id="calc-move-power">威力: -</span>
+                                    <span id="calc-move-category">分類: -</span>
                                 </div>
-                                <div class="stat-row">
-                                    <label>攻撃/特攻</label>
-                                    <input type="number" id="calc-attacker-stat" placeholder="実数値" min="1" max="999">
+                            </div>
+
+                            <!-- 特性・持ち物 -->
+                            <div class="calc-extras-section">
+                                <div class="extras-row">
+                                    <label>特性</label>
+                                    <select id="calc-attacker-ability">
+                                        <option value="">特性を選択</option>
+                                    </select>
+                                </div>
+                                <div class="extras-row">
+                                    <label>持ち物</label>
+                                    <select id="calc-attacker-item">
+                                        <option value="">持ち物なし</option>
+                                        <option value="life-orb">いのちのたま</option>
+                                        <option value="choice-band">こだわりハチマキ</option>
+                                        <option value="choice-specs">こだわりメガネ</option>
+                                        <option value="expert-belt">たつじんのおび</option>
+                                    </select>
                                 </div>
                             </div>
                         </div>
 
-                        <div class="calc-defender">
-                            <h3>防御側の設定</h3>
-                            <div class="calc-input-group">
-                                <label>ポケモン</label>
+                        <!-- 防御側の詳細設定 -->
+                        <div class="calc-panel calc-defender">
+                            <h3>防御側</h3>
+
+                            <!-- ポケモン選択 -->
+                            <div class="calc-pokemon-section">
                                 <select id="calc-defender-pokemon" class="pokemon-select">
                                     <option value="">ポケモンを選択</option>
                                 </select>
+                                <div class="pokemon-info">
+                                    <span id="calc-defender-types" class="type-display"></span>
+                                </div>
                             </div>
-                            <div class="calc-stats">
-                                <h4>能力値</h4>
-                                <div class="stat-row">
-                                    <label>レベル</label>
-                                    <input type="number" id="calc-defender-level" value="50" min="1" max="100">
+
+                            <!-- ステータス設定 -->
+                            <div class="calc-stats-section">
+                                <h4>ステータス設定</h4>
+                                <div class="stats-grid">
+                                    <div class="stat-input-group" style="grid-column: 1 / -1;">
+                                        <label>性格</label>
+                                        <select id="calc-defender-nature">
+                                            <option value="neutral">無補正</option>
+                                            <option value="bold">ずぶとい(防御↑攻撃↓)</option>
+                                            <option value="calm">おだやか(特防↑攻撃↓)</option>
+                                            <option value="impish">わんぱく(防御↑特攻↓)</option>
+                                            <option value="careful">しんちょう(特防↑特攻↓)</option>
+                                            <option value="relaxed">のんき(防御↑素早↓)</option>
+                                            <option value="sassy">なまいき(特防↑素早↓)</option>
+                                        </select>
+                                    </div>
                                 </div>
-                                <div class="stat-row">
-                                    <label>HP</label>
-                                    <input type="number" id="calc-defender-hp" placeholder="実数値" min="1" max="999">
+
+                                <!-- ステータス詳細 -->
+                                <div class="detailed-stats">
+                                    <div class="stat-detail">
+                                        <label>HP</label>
+                                        <input type="number" class="iv-input" id="calc-defender-hp-iv" placeholder="個体値" value="31" min="0" max="31">
+                                        <input type="number" class="ev-input" id="calc-defender-hp-ev" placeholder="努力値" value="252" min="0" max="252">
+                                        <span class="actual-stat" id="calc-defender-hp-actual">実数値: -</span>
+                                    </div>
+                                    <div class="stat-detail">
+                                        <label>防御</label>
+                                        <input type="number" class="iv-input" id="calc-defender-def-iv" placeholder="個体値" value="31" min="0" max="31">
+                                        <input type="number" class="ev-input" id="calc-defender-def-ev" placeholder="努力値" value="0" min="0" max="252">
+                                        <span class="actual-stat" id="calc-defender-def-actual">実数値: -</span>
+                                    </div>
+                                    <div class="stat-detail">
+                                        <label>特防</label>
+                                        <input type="number" class="iv-input" id="calc-defender-spdef-iv" placeholder="個体値" value="31" min="0" max="31">
+                                        <input type="number" class="ev-input" id="calc-defender-spdef-ev" placeholder="努力値" value="0" min="0" max="252">
+                                        <span class="actual-stat" id="calc-defender-spdef-actual">実数値: -</span>
+                                    </div>
                                 </div>
-                                <div class="stat-row">
-                                    <label>防御/特防</label>
-                                    <input type="number" id="calc-defender-stat" placeholder="実数値" min="1" max="999">
+                            </div>
+
+                            <!-- 特性・持ち物 -->
+                            <div class="calc-extras-section">
+                                <div class="extras-row">
+                                    <label>特性</label>
+                                    <select id="calc-defender-ability">
+                                        <option value="">特性を選択</option>
+                                    </select>
+                                </div>
+                                <div class="extras-row">
+                                    <label>持ち物</label>
+                                    <select id="calc-defender-item">
+                                        <option value="">持ち物なし</option>
+                                        <option value="assault-vest">とつげきチョッキ</option>
+                                        <option value="leftovers">たべのこし</option>
+                                        <option value="rocky-helmet">ゴツゴツメット</option>
+                                    </select>
                                 </div>
                             </div>
                         </div>
                     </div>
 
-                    <div class="calc-modifiers">
-                        <h3>補正要素</h3>
-                        <div class="modifier-grid">
-                            <label><input type="checkbox" id="calc-critical"> 急所</label>
-                            <label><input type="checkbox" id="calc-stab"> タイプ一致</label>
-                            <label><input type="checkbox" id="calc-weather"> 天候補正</label>
-                            <label><input type="checkbox" id="calc-terrain"> フィールド補正</label>
+                    <!-- 環境設定 -->
+                    <div class="calc-environment">
+                        <h3>バトル環境</h3>
+                        <div class="environment-grid">
+                            <div class="env-group">
+                                <label>天候</label>
+                                <select id="calc-weather">
+                                    <option value="none">なし</option>
+                                    <option value="sun">晴れ</option>
+                                    <option value="rain">雨</option>
+                                    <option value="sand">砂嵐</option>
+                                    <option value="hail">あられ</option>
+                                </select>
+                            </div>
+                            <div class="env-group">
+                                <label>フィールド</label>
+                                <select id="calc-terrain">
+                                    <option value="none">なし</option>
+                                    <option value="electric">エレキフィールド</option>
+                                    <option value="grassy">グラスフィールド</option>
+                                    <option value="psychic">サイコフィールド</option>
+                                    <option value="misty">ミストフィールド</option>
+                                </select>
+                            </div>
+                            <div class="env-group">
+                                <label><input type="checkbox" id="calc-critical"> 急所に当てる</label>
+                            </div>
+                            <div class="env-group">
+                                <label><input type="checkbox" id="calc-burn"> やけど状態</label>
+                            </div>
                         </div>
                     </div>
 
-                    <button class="btn-primary" onclick="calculateDamage();">ダメージ計算</button>
+                    <button class="btn-primary calc-button" onclick="calculateDamage();">ダメージ計算</button>
 
+                    <!-- 計算結果 -->
                     <div id="calc-result" class="calc-results">
                         <h3>計算結果</h3>
-                        <div id="calc-damage-range"></div>
-                        <div id="calc-percentage"></div>
-                        <div id="calc-ko-chance"></div>
+                        <div class="result-main">
+                            <div id="calc-damage-range" class="damage-display"></div>
+                            <div id="calc-percentage" class="percentage-display"></div>
+                            <div id="calc-ko-chance" class="ko-display"></div>
+                        </div>
+                        <div class="result-details">
+                            <div id="calc-formula" class="formula-display"></div>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -366,6 +499,7 @@
     <script src="js/damage-calculator.js"></script>
     <script src="js/battle-ui.js"></script>
     <script src="js/ranking.js"></script>
+    <script src="js/damage-calc.js"></script>
 </body>
 
 </html>

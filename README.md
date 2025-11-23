@@ -68,3 +68,4 @@ python scripts/fetch_pokemon_detail.py
 - [ ] 対戦履歴の記録・分析
 - [ ] AIによる選出提案
 - [ ] モバイル対応
+- [ ] 30位以降のランキングデータ取得機能（Pokemon HOME APIの詳細エンドポイント利用）
