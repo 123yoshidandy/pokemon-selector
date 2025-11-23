@@ -1,97 +1,359 @@
 <!DOCTYPE html>
-<html>
+<html lang="ja">
 
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pokemon Selector - 選出サポートツール</title>
+    <title>ポケモン対戦支援ツール</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <h1>ポケモン選出サポート</h1>
+    <header>
+        <h1>ポケモン対戦支援ツール</h1>
+        <nav class="main-nav">
+            <button class="nav-tab active" data-tab="team-builder">構築支援</button>
+            <button class="nav-tab" data-tab="battle-selector">選出支援</button>
+            <button class="nav-tab" data-tab="battle-guide">立ち回り支援</button>
+            <button class="nav-tab" data-tab="battle-simulator">対面シミュ</button>
+            <button class="nav-tab" data-tab="damage-calc">ダメージ計算</button>
+            <button class="nav-tab" data-tab="ranking">使用率ランキング</button>
+        </nav>
+    </header>
 
-    <div id="recommendation-section">
-        <h2>推奨選出（自分の6匹から3匹）</h2>
-        <div id="recommendations"></div>
-    </div>
+    <main>
+        <!-- 構築支援タブ -->
+        <div id="team-builder" class="tab-content active">
+            <section class="content-section">
+                <h2>パーティ構築</h2>
+                <div class="party-builder">
+                    <div class="my-party">
+                        <h3>自分のパーティ</h3>
+                        <div class="pokemon-slots">
+                            <div class="pokemon-slot">
+                                <input type="text" class="form pokemon-input" id="f0" list="pokemon-list" placeholder="ポケモン1" />
+                                <span class="score-badge" id="score_f0"></span>
+                            </div>
+                            <div class="pokemon-slot">
+                                <input type="text" class="form pokemon-input" id="f1" list="pokemon-list" placeholder="ポケモン2" />
+                                <span class="score-badge" id="score_f1"></span>
+                            </div>
+                            <div class="pokemon-slot">
+                                <input type="text" class="form pokemon-input" id="f2" list="pokemon-list" placeholder="ポケモン3" />
+                                <span class="score-badge" id="score_f2"></span>
+                            </div>
+                            <div class="pokemon-slot">
+                                <input type="text" class="form pokemon-input" id="f3" list="pokemon-list" placeholder="ポケモン4" />
+                                <span class="score-badge" id="score_f3"></span>
+                            </div>
+                            <div class="pokemon-slot">
+                                <input type="text" class="form pokemon-input" id="f4" list="pokemon-list" placeholder="ポケモン5" />
+                                <span class="score-badge" id="score_f4"></span>
+                            </div>
+                            <div class="pokemon-slot">
+                                <input type="text" class="form pokemon-input" id="f5" list="pokemon-list" placeholder="ポケモン6" />
+                                <span class="score-badge" id="score_f5"></span>
+                            </div>
+                        </div>
+                        <button class="btn-secondary" onclick="onReset1();">リセット</button>
+                    </div>
 
-    <div id="ranking-section">
-        <h2>ランキング上位ポケモン</h2>
-        <div id="ranking-pokemons"></div>
-    </div>
+                    <div class="meta-info">
+                        <h3>環境ポケモン（想定相手）</h3>
+                        <div class="pokemon-slots">
+                            <div class="pokemon-slot">
+                                <input type="text" class="form pokemon-input" id="e0" list="pokemon-list" placeholder="相手1" />
+                                <span class="score-badge" id="score_e0"></span>
+                            </div>
+                            <div class="pokemon-slot">
+                                <input type="text" class="form pokemon-input" id="e1" list="pokemon-list" placeholder="相手2" />
+                                <span class="score-badge" id="score_e1"></span>
+                            </div>
+                            <div class="pokemon-slot">
+                                <input type="text" class="form pokemon-input" id="e2" list="pokemon-list" placeholder="相手3" />
+                                <span class="score-badge" id="score_e2"></span>
+                            </div>
+                            <div class="pokemon-slot">
+                                <input type="text" class="form pokemon-input" id="e3" list="pokemon-list" placeholder="相手4" />
+                                <span class="score-badge" id="score_e3"></span>
+                            </div>
+                            <div class="pokemon-slot">
+                                <input type="text" class="form pokemon-input" id="e4" list="pokemon-list" placeholder="相手5" />
+                                <span class="score-badge" id="score_e4"></span>
+                            </div>
+                            <div class="pokemon-slot">
+                                <input type="text" class="form pokemon-input" id="e5" list="pokemon-list" placeholder="相手6" />
+                                <span class="score-badge" id="score_e5"></span>
+                            </div>
+                        </div>
+                        <button class="btn-secondary" onclick="onReset2();">リセット</button>
+                        <button class="btn-secondary" onclick="showRankingPokemons();">使用率上位を設定</button>
+                    </div>
+                </div>
 
-    <div id="selection-section">
-        <h2>パーティ構成</h2>
-        <table>
-        <tr>
-            <td></td>
-            <td>自分</td>
-            <td>相手</td>
-            <td></td>
-        </tr>
-        <tr>
-            <td id="score_f0"></td>
-            <td><input type="text" class="form" id="f0" name="f0" list="pokemon-list" /></td>
-            <td><input type="text" class="form" id="e0" name="e0" list="pokemon-list" /></td>
-            <td id="score_e0"></td>
-        </tr>
-        <tr>
-            <td id="score_f1"></td>
-            <td><input type="text" class="form" id="f1" name="f1" list="pokemon-list" /></td>
-            <td><input type="text" class="form" id="e1" name="e1" list="pokemon-list" /></td>
-            <td id="score_e1"></td>
-        </tr>
-        <tr>
-            <td id="score_f2"></td>
-            <td><input type="text" class="form" id="f2" name="f2" list="pokemon-list" /></td>
-            <td><input type="text" class="form" id="e2" name="e2" list="pokemon-list" /></td>
-            <td id="score_e2"></td>
-        </tr>
-        <tr>
-            <td id="score_f3"></td>
-            <td><input type="text" class="form" id="f3" name="f3" list="pokemon-list" /></td>
-            <td><input type="text" class="form" id="e3" name="e3" list="pokemon-list" /></td>
-            <td id="score_e3"></td>
-        </tr>
-        <tr>
-            <td id="score_f4"></td>
-            <td><input type="text" class="form" id="f4" name="f4" list="pokemon-list" /></td>
-            <td><input type="text" class="form" id="e4" name="e4" list="pokemon-list" /></td>
-            <td id="score_e4"></td>
-        </tr>
-        <tr>
-            <td id="score_f5"></td>
-            <td><input type="text" class="form" id="f5" name="f5" list="pokemon-list" /></td>
-            <td><input type="text" class="form" id="e5" name="e5" list="pokemon-list" /></td>
-            <td id="score_e5"></td>
-        </tr>
-        <tr>
-            <td></td>
-            <td>
-                <input type="button" value="reset" onclick="onReset1();" />
-            </td>
-            <td><input type="button" value="reset" onclick="onReset2();" /></td>
-            <td></td>
-        </tr>
-        </table>
-        <p>
-            <input type="submit" value="相性分析" onclick="buttonClick();" />
-            <input type="button" value="推奨選出を表示" onclick="showRecommendations();" />
-            <input type="button" value="ランキング上位を表示" onclick="showRankingPokemons();" />
-            <input type="button" value="対面シミュレーション" onclick="showBattleSimulation();" style="background-color: #ff9800;" />
-        </p>
-    </div>
-    <div id="analysis-section">
-        <h2>分析結果</h2>
-        <div id="analysis-summary"></div>
-        <table id="links" border="1" style="border-collapse: collapse">
-        </table>
-    </div>
+                <div class="action-buttons">
+                    <button class="btn-primary" onclick="buttonClick();">タイプ相性分析</button>
+                </div>
+
+                <div id="analysis-section" class="analysis-results">
+                    <h3>分析結果</h3>
+                    <div id="analysis-summary"></div>
+                    <table id="links" border="1" style="border-collapse: collapse"></table>
+                </div>
+            </section>
+        </div>
+
+        <!-- 選出支援タブ -->
+        <div id="battle-selector" class="tab-content">
+            <section class="content-section">
+                <h2>バトル選出支援</h2>
+
+                <div class="selection-helper">
+                    <div class="current-parties">
+                        <div class="party-display">
+                            <h3>自分のパーティ</h3>
+                            <div id="my-party-display" class="party-list"></div>
+                        </div>
+                        <div class="party-display">
+                            <h3>相手のパーティ</h3>
+                            <div id="enemy-party-display" class="party-list"></div>
+                        </div>
+                    </div>
+
+                    <div class="selection-tools">
+                        <button class="btn-primary" onclick="showRecommendations();">推奨選出を計算</button>
+                        <div id="recommendation-section" class="recommendation-results">
+                            <h3>推奨選出（3匹）</h3>
+                            <div id="recommendations"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="ranking-section" class="ranking-display">
+                    <h3>環境ランキング</h3>
+                    <div id="ranking-pokemons"></div>
+                </div>
+            </section>
+        </div>
+
+        <!-- 立ち回り支援タブ -->
+        <div id="battle-guide" class="tab-content">
+            <section class="content-section">
+                <h2>バトル立ち回り支援</h2>
+
+                <div class="guide-content">
+                    <h3>立ち回りアシスタント</h3>
+                    <p>選出したポケモンに対する立ち回りのアドバイスを提供します。</p>
+
+                    <div class="quick-access">
+                        <h4>クイックアクセス</h4>
+                        <div class="quick-buttons">
+                            <button class="btn-secondary" onclick="document.querySelector('[data-tab=\"battle-simulator\"]').click();">対面シミュレーションへ</button>
+                            <button class="btn-secondary" onclick="document.querySelector('[data-tab=\"damage-calc\"]').click();">ダメージ計算へ</button>
+                            <button class="btn-secondary" onclick="document.querySelector('[data-tab=\"ranking\"]').click();">使用率ランキングへ</button>
+                        </div>
+                    </div>
+
+                    <div class="battle-tips">
+                        <h4>戦術アドバイス</h4>
+                        <div id="battle-tips-content">
+                            <p>選出支援タブで選出を決めた後、ここに戦術アドバイスが表示されます。</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- 対面シミュレーションタブ -->
+        <div id="battle-simulator" class="tab-content">
+            <section class="content-section">
+                <h2>対面シミュレーション</h2>
+
+                <div class="battle-simulation">
+                    <div class="simulation-setup">
+                        <div class="attacker-setup">
+                            <h3>攻撃側</h3>
+                            <select id="sim-attacker-pokemon" class="pokemon-select">
+                                <option value="">ポケモンを選択</option>
+                            </select>
+                            <input type="number" id="sim-attacker-level" placeholder="レベル" value="50" min="1" max="100">
+                            <select id="sim-attacker-move" class="move-select">
+                                <option value="">技を選択</option>
+                            </select>
+                            <div class="stat-inputs">
+                                <h4>ステータス</h4>
+                                <input type="number" id="sim-attacker-atk" placeholder="攻撃" min="1" max="999">
+                                <input type="number" id="sim-attacker-spatk" placeholder="特攻" min="1" max="999">
+                            </div>
+                        </div>
+
+                        <div class="defender-setup">
+                            <h3>防御側</h3>
+                            <select id="sim-defender-pokemon" class="pokemon-select">
+                                <option value="">ポケモンを選択</option>
+                            </select>
+                            <input type="number" id="sim-defender-level" placeholder="レベル" value="50" min="1" max="100">
+                            <div class="stat-inputs">
+                                <h4>ステータス</h4>
+                                <input type="number" id="sim-defender-hp" placeholder="HP" min="1" max="999">
+                                <input type="number" id="sim-defender-def" placeholder="防御" min="1" max="999">
+                                <input type="number" id="sim-defender-spdef" placeholder="特防" min="1" max="999">
+                            </div>
+                        </div>
+                    </div>
+
+                    <button class="btn-primary" onclick="showBattleSimulation();">シミュレーション実行</button>
+
+                    <div id="sim-result" class="simulation-results">
+                        <h3>シミュレーション結果</h3>
+                        <div id="sim-damage-output"></div>
+                        <div id="sim-battle-advice"></div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- ダメージ計算タブ -->
+        <div id="damage-calc" class="tab-content">
+            <section class="content-section">
+                <h2>ダメージ計算ツール</h2>
+
+                <div class="damage-calculator-full">
+                    <div class="calc-setup">
+                        <div class="calc-attacker">
+                            <h3>攻撃側の設定</h3>
+                            <div class="calc-input-group">
+                                <label>ポケモン</label>
+                                <select id="calc-attacker-pokemon" class="pokemon-select">
+                                    <option value="">ポケモンを選択</option>
+                                </select>
+                            </div>
+                            <div class="calc-input-group">
+                                <label>技</label>
+                                <select id="calc-move" class="move-select">
+                                    <option value="">技を選択</option>
+                                </select>
+                            </div>
+                            <div class="calc-stats">
+                                <h4>能力値</h4>
+                                <div class="stat-row">
+                                    <label>レベル</label>
+                                    <input type="number" id="calc-attacker-level" value="50" min="1" max="100">
+                                </div>
+                                <div class="stat-row">
+                                    <label>攻撃/特攻</label>
+                                    <input type="number" id="calc-attacker-stat" placeholder="実数値" min="1" max="999">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="calc-defender">
+                            <h3>防御側の設定</h3>
+                            <div class="calc-input-group">
+                                <label>ポケモン</label>
+                                <select id="calc-defender-pokemon" class="pokemon-select">
+                                    <option value="">ポケモンを選択</option>
+                                </select>
+                            </div>
+                            <div class="calc-stats">
+                                <h4>能力値</h4>
+                                <div class="stat-row">
+                                    <label>レベル</label>
+                                    <input type="number" id="calc-defender-level" value="50" min="1" max="100">
+                                </div>
+                                <div class="stat-row">
+                                    <label>HP</label>
+                                    <input type="number" id="calc-defender-hp" placeholder="実数値" min="1" max="999">
+                                </div>
+                                <div class="stat-row">
+                                    <label>防御/特防</label>
+                                    <input type="number" id="calc-defender-stat" placeholder="実数値" min="1" max="999">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="calc-modifiers">
+                        <h3>補正要素</h3>
+                        <div class="modifier-grid">
+                            <label><input type="checkbox" id="calc-critical"> 急所</label>
+                            <label><input type="checkbox" id="calc-stab"> タイプ一致</label>
+                            <label><input type="checkbox" id="calc-weather"> 天候補正</label>
+                            <label><input type="checkbox" id="calc-terrain"> フィールド補正</label>
+                        </div>
+                    </div>
+
+                    <button class="btn-primary" onclick="calculateDamage();">ダメージ計算</button>
+
+                    <div id="calc-result" class="calc-results">
+                        <h3>計算結果</h3>
+                        <div id="calc-damage-range"></div>
+                        <div id="calc-percentage"></div>
+                        <div id="calc-ko-chance"></div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- 使用率ランキングタブ -->
+        <div id="ranking" class="tab-content">
+            <section class="content-section">
+                <h2>使用率ランキング</h2>
+
+                <div class="ranking-controls">
+                    <div class="filter-options">
+                        <button class="btn-secondary active" onclick="filterRanking('single');">シングル</button>
+                        <button class="btn-secondary" onclick="filterRanking('double');">ダブル</button>
+                    </div>
+                    <div class="season-selector">
+                        <label>シーズン: </label>
+                        <select id="season-select">
+                            <option value="current">現在のシーズン</option>
+                            <option value="previous">前シーズン</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="ranking-grid" id="ranking-grid">
+                    <div class="ranking-header">
+                        <span>順位</span>
+                        <span>ポケモン</span>
+                        <span>タイプ</span>
+                        <span>使用率</span>
+                        <span>前回比</span>
+                    </div>
+                    <div id="ranking-list"></div>
+                </div>
+
+                <div class="ranking-details">
+                    <h3>詳細情報</h3>
+                    <div id="pokemon-details">
+                        <p>ポケモンを選択すると詳細情報が表示されます。</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
 
     <datalist id="pokemon-list"></datalist>
 
     <script>
+        // タブ切り替え機能
+        document.querySelectorAll('.nav-tab').forEach(tab => {
+            tab.addEventListener('click', function() {
+                // アクティブなタブを切り替え
+                document.querySelectorAll('.nav-tab').forEach(t => t.classList.remove('active'));
+                this.classList.add('active');
+
+                // コンテンツを切り替え
+                const tabName = this.dataset.tab;
+                document.querySelectorAll('.tab-content').forEach(content => {
+                    content.classList.remove('active');
+                });
+                document.getElementById(tabName).classList.add('active');
+            });
+        });
+
         // デバッグ用
         console.log('Loading scripts...');
         window.addEventListener('error', (e) => {
@@ -103,6 +365,7 @@
     <script src="js/recommendation.js" type="module"></script>
     <script src="js/damage-calculator.js"></script>
     <script src="js/battle-ui.js"></script>
+    <script src="js/ranking.js"></script>
 </body>
 
 </html>

@@ -1,154 +1,710 @@
-body {
-    margin: 0 auto;
-    max-width: 1200px;
-    padding: 20px;
-    text-align: center;
-    font-size: 16px;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-    background-color: #f5f5f5;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-h1 {
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
     color: #333;
-    font-size: 2em;
+}
+
+header {
+    background: white;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    padding: 20px 0;
     margin-bottom: 30px;
 }
 
-h2 {
-    color: #555;
-    font-size: 1.5em;
-    margin: 20px 0;
-    border-bottom: 2px solid #ddd;
-    padding-bottom: 10px;
-}
-
-table {
-    margin: 20px auto;
-    background: white;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    padding: 15px;
-}
-
-td {
+header h1 {
     text-align: center;
-    padding: 8px;
+    color: #333;
+    font-size: 2em;
+    margin-bottom: 20px;
 }
 
-input[type="text"] {
-    font-size: 14px;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    padding: 8px;
+.main-nav {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    padding: 0 20px;
+    flex-wrap: wrap;
 }
 
-input[type="button"],
-input[type="submit"] {
-    font-size: 14px;
-    background-color: #4CAF50;
-    color: white;
+.nav-tab {
+    background: #f5f5f5;
     border: none;
-    border-radius: 4px;
     padding: 10px 20px;
-    margin: 5px;
+    font-size: 15px;
     cursor: pointer;
-    transition: background-color 0.3s;
+    border-radius: 8px 8px 0 0;
+    transition: all 0.3s ease;
+    font-weight: 500;
 }
 
-input[type="button"]:hover,
-input[type="submit"]:hover {
-    background-color: #45a049;
+.nav-tab:hover {
+    background: #e0e0e0;
 }
 
-.form {
-    width: 200px;
-    height: 36px;
+.nav-tab.active {
+    background: #667eea;
+    color: white;
 }
 
-#recommendation-section,
-#selection-section,
-#analysis-section {
+main {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.tab-content {
+    display: none;
+    animation: fadeIn 0.3s ease;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.content-section {
     background: white;
+    border-radius: 12px;
+    padding: 30px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+}
+
+h2 {
+    color: #333;
+    font-size: 1.8em;
+    margin-bottom: 25px;
+    padding-bottom: 10px;
+    border-bottom: 3px solid #667eea;
+}
+
+h3 {
+    color: #555;
+    font-size: 1.3em;
+    margin: 20px 0 15px;
+}
+
+h4 {
+    color: #666;
+    font-size: 1.1em;
+    margin: 15px 0 10px;
+}
+
+/* 構築支援のスタイル */
+.party-builder {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    margin: 30px 0;
+}
+
+.my-party, .meta-info {
+    background: #f8f9fa;
     border-radius: 8px;
     padding: 20px;
-    margin: 20px 0;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
-#recommendations {
+.pokemon-slots {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 15px;
     margin: 20px 0;
 }
 
-.recommendation-card {
-    background: #f8f8f8;
-    border: 2px solid #ddd;
+.pokemon-slot {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: white;
+    padding: 10px;
     border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.pokemon-input {
+    flex: 1;
+    padding: 10px;
+    border: 2px solid #e0e0e0;
+    border-radius: 6px;
+    font-size: 14px;
+    transition: border-color 0.3s;
+}
+
+.pokemon-input:focus {
+    outline: none;
+    border-color: #667eea;
+}
+
+.score-badge {
+    background: #e0e0e0;
+    color: #333;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: bold;
+    min-width: 30px;
+    text-align: center;
+}
+
+.score-badge.positive {
+    background: #4CAF50;
+    color: white;
+}
+
+.score-badge.negative {
+    background: #f44336;
+    color: white;
+}
+
+/* ボタンスタイル */
+.btn-primary {
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s;
+    box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+}
+
+.btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(102, 126, 234, 0.5);
+}
+
+.btn-secondary {
+    background: white;
+    color: #667eea;
+    border: 2px solid #667eea;
+    padding: 10px 20px;
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s;
+    margin: 5px;
+}
+
+.btn-secondary:hover {
+    background: #667eea;
+    color: white;
+}
+
+.action-buttons {
+    text-align: center;
+    margin: 30px 0;
+}
+
+/* 選出支援のスタイル */
+.selection-helper {
+    margin: 30px 0;
+}
+
+.current-parties {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    margin-bottom: 30px;
+}
+
+.party-display {
+    background: #f8f9fa;
+    border-radius: 8px;
+    padding: 20px;
+}
+
+.party-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.selection-tools {
+    text-align: center;
+    margin: 30px 0;
+}
+
+.recommendation-results {
+    background: #f0f4ff;
+    border-radius: 8px;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+#recommendations {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.recommendation-card {
+    background: white;
+    border: 3px solid #e0e0e0;
+    border-radius: 10px;
     padding: 15px;
     cursor: pointer;
     transition: all 0.3s;
+    text-align: center;
 }
 
 .recommendation-card:hover {
-    border-color: #4CAF50;
-    transform: translateY(-2px);
-    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+    border-color: #667eea;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.1);
 }
 
 .recommendation-card.selected {
-    background: #e8f5e9;
-    border-color: #4CAF50;
+    background: linear-gradient(135deg, #f0f4ff, #e8ecff);
+    border-color: #667eea;
 }
 
+/* 立ち回り支援のスタイル */
+.battle-simulation {
+    background: #f8f9fa;
+    border-radius: 8px;
+    padding: 25px;
+    margin: 30px 0;
+}
+
+.simulation-setup {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    margin: 25px 0;
+}
+
+.attacker-setup, .defender-setup {
+    background: white;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+.pokemon-select, .move-select {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 2px solid #e0e0e0;
+    border-radius: 6px;
+    font-size: 14px;
+    background: white;
+}
+
+input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 2px solid #e0e0e0;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+.simulation-results {
+    background: #fff3e0;
+    border-radius: 8px;
+    padding: 20px;
+    margin-top: 25px;
+}
+
+.damage-calculator {
+    background: #f8f9fa;
+    border-radius: 8px;
+    padding: 20px;
+    margin-top: 30px;
+    text-align: center;
+}
+
+/* 分析結果のスタイル */
+.analysis-results {
+    background: #f0f4ff;
+    border-radius: 8px;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+#analysis-summary {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    margin: 15px 0;
+    text-align: left;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+.analysis-item {
+    margin: 12px 0;
+    padding: 8px;
+    background: #f8f9fa;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+/* ランキング表示 */
+.ranking-display {
+    background: #f8f9fa;
+    border-radius: 8px;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+#ranking-pokemons {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 15px;
+    margin-top: 20px;
+}
+
+/* ポケモンタイプのバッジ */
 .pokemon-name {
     font-weight: bold;
     font-size: 1.1em;
     margin-bottom: 8px;
+    color: #333;
 }
 
 .pokemon-rank {
-    color: #777;
+    color: #888;
     font-size: 0.9em;
+    margin-top: 5px;
 }
 
 .pokemon-types {
-    margin-top: 5px;
+    margin-top: 8px;
 }
 
 .type-badge {
     display: inline-block;
-    padding: 2px 8px;
+    padding: 4px 10px;
     margin: 2px;
-    border-radius: 4px;
-    font-size: 0.85em;
+    border-radius: 12px;
+    font-size: 0.8em;
+    font-weight: 500;
     color: white;
 }
 
-#analysis-summary {
-    background: #f0f0f0;
-    padding: 15px;
-    border-radius: 8px;
-    margin: 15px 0;
-    text-align: left;
+/* タイプごとの色 */
+.type-normal { background: #A8A878; }
+.type-fire { background: #F08030; }
+.type-water { background: #6890F0; }
+.type-electric { background: #F8D030; }
+.type-grass { background: #78C850; }
+.type-ice { background: #98D8D8; }
+.type-fighting { background: #C03028; }
+.type-poison { background: #A040A0; }
+.type-ground { background: #E0C068; }
+.type-flying { background: #A890F0; }
+.type-psychic { background: #F85888; }
+.type-bug { background: #A8B820; }
+.type-rock { background: #B8A038; }
+.type-ghost { background: #705898; }
+.type-dragon { background: #7038F8; }
+.type-dark { background: #705848; }
+.type-steel { background: #B8B8D0; }
+.type-fairy { background: #EE99AC; }
+
+/* 新しいタブのスタイル */
+.guide-content {
+    padding: 20px 0;
 }
 
-.analysis-item {
+.quick-buttons {
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+    flex-wrap: wrap;
+}
+
+.battle-tips {
+    background: #f8f9fa;
+    border-radius: 8px;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+.stat-inputs {
+    background: #f8f9fa;
+    border-radius: 6px;
+    padding: 15px;
+    margin-top: 15px;
+}
+
+.stat-inputs input {
+    width: calc(50% - 5px);
+    display: inline-block;
+    margin: 5px 0;
+}
+
+.damage-calculator-full {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.calc-setup {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    margin: 30px 0;
+}
+
+.calc-attacker, .calc-defender {
+    background: #f8f9fa;
+    border-radius: 8px;
+    padding: 20px;
+}
+
+.calc-input-group {
+    margin: 15px 0;
+}
+
+.calc-input-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 500;
+    color: #555;
+}
+
+.calc-stats {
+    margin-top: 20px;
+}
+
+.stat-row {
+    display: flex;
+    align-items: center;
     margin: 10px 0;
+}
+
+.stat-row label {
+    width: 100px;
     font-size: 14px;
 }
 
-.score-positive {
+.stat-row input {
+    flex: 1;
+}
+
+.calc-modifiers {
+    background: #f0f4ff;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 30px 0;
+}
+
+.modifier-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.modifier-grid label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+}
+
+.calc-results {
+    background: #fff3e0;
+    border-radius: 8px;
+    padding: 25px;
+    margin-top: 30px;
+    text-align: center;
+}
+
+.calc-results div {
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+/* ランキングタブのスタイル */
+.ranking-controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.filter-options {
+    display: flex;
+    gap: 10px;
+}
+
+.filter-options .btn-secondary.active {
+    background: #667eea;
+    color: white;
+}
+
+.season-selector {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.season-selector select {
+    padding: 8px 15px;
+    border: 2px solid #e0e0e0;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+.ranking-grid {
+    background: #f8f9fa;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 30px;
+}
+
+.ranking-header {
+    display: grid;
+    grid-template-columns: 60px 2fr 2fr 100px 100px;
+    gap: 15px;
+    padding: 15px;
+    background: #667eea;
+    color: white;
+    border-radius: 6px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+#ranking-list {
+    max-height: 600px;
+    overflow-y: auto;
+}
+
+.ranking-item {
+    display: grid;
+    grid-template-columns: 60px 2fr 2fr 100px 100px;
+    gap: 15px;
+    padding: 15px;
+    background: white;
+    border-radius: 6px;
+    margin-bottom: 8px;
+    transition: all 0.3s;
+    cursor: pointer;
+    align-items: center;
+}
+
+.ranking-item:hover {
+    transform: translateX(5px);
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+.rank-number {
+    font-weight: bold;
+    font-size: 18px;
+    color: #667eea;
+}
+
+.usage-rate {
+    text-align: center;
+    font-weight: 600;
+}
+
+.rank-change {
+    text-align: center;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.rank-change.up {
     color: #4CAF50;
-    font-weight: bold;
 }
 
-.score-negative {
+.rank-change.down {
     color: #f44336;
-    font-weight: bold;
 }
 
-.score-neutral {
-    color: #666;
+.rank-change.same {
+    color: #999;
+}
+
+.detail-content {
+    margin-top: 15px;
+}
+
+.detail-content p {
+    margin: 10px 0;
+}
+
+.common-moves, .common-items {
+    margin-top: 15px;
+}
+
+.common-moves ul, .common-items ul {
+    margin-top: 8px;
+    padding-left: 20px;
+}
+
+.common-moves li, .common-items li {
+    margin: 5px 0;
+    list-style-type: disc;
+}
+
+.ranking-details {
+    background: #f0f4ff;
+    border-radius: 8px;
+    padding: 20px;
+}
+
+/* レスポンシブ対応 */
+@media (max-width: 768px) {
+    .main-nav {
+        justify-content: flex-start;
+        overflow-x: auto;
+        padding: 0 10px;
+    }
+
+    .nav-tab {
+        padding: 8px 15px;
+        font-size: 14px;
+        white-space: nowrap;
+    }
+
+    .party-builder,
+    .current-parties,
+    .simulation-setup,
+    .calc-setup {
+        grid-template-columns: 1fr;
+    }
+
+    .pokemon-slots {
+        grid-template-columns: 1fr;
+    }
+
+    header h1 {
+        font-size: 1.5em;
+    }
+
+    .content-section {
+        padding: 20px;
+    }
+
+    .ranking-header,
+    .ranking-item {
+        grid-template-columns: 40px 1fr 80px;
+    }
+
+    .ranking-header span:nth-child(3),
+    .ranking-header span:nth-child(5),
+    .ranking-item span:nth-child(3),
+    .ranking-item span:nth-child(5) {
+        display: none;
+    }
 }
