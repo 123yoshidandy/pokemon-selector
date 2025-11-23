@@ -295,7 +295,7 @@ h4 {
     box-shadow: 0 2px 10px rgba(0,0,0,0.05);
 }
 
-.pokemon-select, .move-select {
+.pokemon-select, .move-select, .pokemon-search-input {
     width: 100%;
     padding: 10px;
     margin: 10px 0;
@@ -303,6 +303,12 @@ h4 {
     border-radius: 6px;
     font-size: 14px;
     background: white;
+}
+
+.pokemon-search-input:focus {
+    outline: none;
+    border-color: #667eea;
+    box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
 }
 
 input[type="number"] {

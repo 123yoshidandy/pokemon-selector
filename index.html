@@ -224,9 +224,8 @@
 
                             <!-- ポケモン選択 -->
                             <div class="calc-pokemon-section">
-                                <select id="calc-attacker-pokemon" class="pokemon-select">
-                                    <option value="">ポケモンを選択</option>
-                                </select>
+                                <input type="text" id="calc-attacker-pokemon" class="pokemon-search-input" placeholder="ポケモン名を入力" list="calc-attacker-list">
+                                <datalist id="calc-attacker-list"></datalist>
                                 <div class="pokemon-info">
                                     <span id="calc-attacker-types" class="type-display"></span>
                                 </div>
@@ -307,9 +306,8 @@
 
                             <!-- ポケモン選択 -->
                             <div class="calc-pokemon-section">
-                                <select id="calc-defender-pokemon" class="pokemon-select">
-                                    <option value="">ポケモンを選択</option>
-                                </select>
+                                <input type="text" id="calc-defender-pokemon" class="pokemon-search-input" placeholder="ポケモン名を入力" list="calc-defender-list">
+                                <datalist id="calc-defender-list"></datalist>
                                 <div class="pokemon-info">
                                     <span id="calc-defender-types" class="type-display"></span>
                                 </div>

@@ -60,8 +60,10 @@ function initializeDamageCalculator() {
 
 // ポケモン選択ドロップダウンの初期化
 function initializePokemonSelects() {
-    const attackerSelect = document.getElementById('calc-attacker-pokemon');
-    const defenderSelect = document.getElementById('calc-defender-pokemon');
+    const attackerInput = document.getElementById('calc-attacker-pokemon');
+    const defenderInput = document.getElementById('calc-defender-pokemon');
+    const attackerList = document.getElementById('calc-attacker-list');
+    const defenderList = document.getElementById('calc-defender-list');
     const simAttackerSelect = document.getElementById('sim-attacker-pokemon');
     const simDefenderSelect = document.getElementById('sim-defender-pokemon');
 
@@ -76,18 +78,30 @@ function initializePokemonSelects() {
     // 使用率順のポケモンリストを作成
     const sortedPokemonList = createSortedPokemonList();
 
-    // オプションを作成
-    const pokemonOptions = sortedPokemonList.map(item => {
+    // datalistのオプションを作成
+    const datalistOptions = sortedPokemonList.map(item => {
+        if (item.name) {
+            return `<option value="${item.name}" data-id="${item.id}">`;
+        }
+        return '';
+    }).filter(opt => opt !== '').join('');
+
+    // selectボックス用のオプション
+    const selectOptions = sortedPokemonList.map(item => {
         if (item.name) {
             return `<option value="${item.id}">${item.name}</option>`;
         }
         return '';
     }).filter(opt => opt !== '').join('');
 
-    // ドロップダウンに追加
-    [attackerSelect, defenderSelect, simAttackerSelect, simDefenderSelect].forEach(select => {
+    // datalistに追加
+    if (attackerList) attackerList.innerHTML = datalistOptions;
+    if (defenderList) defenderList.innerHTML = datalistOptions;
+
+    // シミュレーター用のselectには従来通り
+    [simAttackerSelect, simDefenderSelect].forEach(select => {
         if (select) {
-            select.innerHTML = '<option value="">ポケモンを選択</option>' + pokemonOptions;
+            select.innerHTML = '<option value="">ポケモンを選択</option>' + selectOptions;
             console.log(`Populated ${select.id} with sorted pokemon list`);
         }
     });
@@ -141,16 +155,24 @@ function setDefaultPokemons() {
     const secondPokemon = damageCalcRankingData.single_ranking[1];
 
     // 攻撃側に1位、防御側に2位を設定
-    const attackerSelect = document.getElementById('calc-attacker-pokemon');
-    const defenderSelect = document.getElementById('calc-defender-pokemon');
+    const attackerInput = document.getElementById('calc-attacker-pokemon');
+    const defenderInput = document.getElementById('calc-defender-pokemon');
 
-    if (attackerSelect && firstPokemon) {
-        attackerSelect.value = firstPokemon.id;
-        updatePokemonMoves('calc-attacker', firstPokemon.id);
+    if (attackerInput && firstPokemon) {
+        const firstName = damageCalcPokemonNames[firstPokemon.id - 1];
+        if (firstName) {
+            attackerInput.value = firstName;
+            attackerInput.dataset.pokemonId = firstPokemon.id;
+            updatePokemonMoves('calc-attacker', firstPokemon.id);
+        }
     }
 
-    if (defenderSelect && secondPokemon) {
-        defenderSelect.value = secondPokemon.id;
+    if (defenderInput && secondPokemon) {
+        const secondName = damageCalcPokemonNames[secondPokemon.id - 1];
+        if (secondName) {
+            defenderInput.value = secondName;
+            defenderInput.dataset.pokemonId = secondPokemon.id;
+        }
     }
 
     // 対面シミュレーションも同様に設定
@@ -170,18 +192,17 @@ function setDefaultPokemons() {
 // イベントリスナーの設定
 function setupEventListeners() {
     // ダメージ計算タブのポケモン選択
-    const attackerSelect = document.getElementById('calc-attacker-pokemon');
-    if (attackerSelect) {
-        attackerSelect.addEventListener('change', (e) => {
-            updatePokemonMoves('calc-attacker', e.target.value);
-            updatePokemonStats('calc-attacker', e.target.value);
+    const attackerInput = document.getElementById('calc-attacker-pokemon');
+    if (attackerInput) {
+        attackerInput.addEventListener('input', (e) => {
+            handlePokemonInput('calc-attacker', e.target);
         });
     }
 
-    const defenderSelect = document.getElementById('calc-defender-pokemon');
-    if (defenderSelect) {
-        defenderSelect.addEventListener('change', (e) => {
-            updatePokemonStats('calc-defender', e.target.value);
+    const defenderInput = document.getElementById('calc-defender-pokemon');
+    if (defenderInput) {
+        defenderInput.addEventListener('input', (e) => {
+            handlePokemonInput('calc-defender', e.target);
         });
     }
 
@@ -199,6 +220,38 @@ function setupEventListeners() {
         simDefenderSelect.addEventListener('change', (e) => {
             updatePokemonStats('sim-defender', e.target.value);
         });
+    }
+}
+
+// ポケモン入力の処理
+function handlePokemonInput(prefix, inputElement) {
+    const inputValue = inputElement.value;
+
+    // 入力値をそのまま使用
+    const cleanName = inputValue.trim();
+
+    if (!cleanName) {
+        // 入力がクリアされた場合
+        inputElement.dataset.pokemonId = '';
+        updatePokemonMoves(prefix, null);
+        updatePokemonStats(prefix, null);
+        return;
+    }
+
+    // ポケモン名からIDを検索
+    const pokemonIndex = damageCalcPokemonNames.findIndex(name => name === cleanName);
+
+    if (pokemonIndex !== -1) {
+        const pokemonId = pokemonIndex + 1;
+        inputElement.dataset.pokemonId = pokemonId;
+
+        if (prefix === 'calc-attacker') {
+            updatePokemonMoves(prefix, pokemonId);
+        }
+        updatePokemonStats(prefix, pokemonId);
+    } else {
+        // 一致するポケモンが見つからない場合
+        inputElement.dataset.pokemonId = '';
     }
 }
 
@@ -330,8 +383,10 @@ function calculateStatHP(base, iv, ev) {
 
 // グローバル関数として定義（HTMLから呼び出し用）
 window.calculateDamage = function() {
-    const attackerPokemon = document.getElementById('calc-attacker-pokemon').value;
-    const defenderPokemon = document.getElementById('calc-defender-pokemon').value;
+    const attackerInput = document.getElementById('calc-attacker-pokemon');
+    const defenderInput = document.getElementById('calc-defender-pokemon');
+    const attackerPokemon = attackerInput.dataset.pokemonId;
+    const defenderPokemon = defenderInput.dataset.pokemonId;
     const move = document.getElementById('calc-move').value;
 
     if (!attackerPokemon || !defenderPokemon || !move) {
