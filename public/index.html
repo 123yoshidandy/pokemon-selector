@@ -3,12 +3,27 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Pokemon Selector</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokemon Selector - 選出サポートツール</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <table>
+    <h1>ポケモン選出サポート</h1>
+
+    <div id="recommendation-section">
+        <h2>推奨選出（自分の6匹から3匹）</h2>
+        <div id="recommendations"></div>
+    </div>
+
+    <div id="ranking-section">
+        <h2>ランキング上位ポケモン</h2>
+        <div id="ranking-pokemons"></div>
+    </div>
+
+    <div id="selection-section">
+        <h2>パーティ構成</h2>
+        <table>
         <tr>
             <td></td>
             <td>自分</td>
@@ -17,59 +32,74 @@
         </tr>
         <tr>
             <td id="score_f0"></td>
-            <td><input type="text" class="form" id="f0" name="f0" /></td>
-            <td><input type="text" class="form" id="e0" name="e0" /></td>
+            <td><input type="text" class="form" id="f0" name="f0" list="pokemon-list" /></td>
+            <td><input type="text" class="form" id="e0" name="e0" list="pokemon-list" /></td>
             <td id="score_e0"></td>
         </tr>
         <tr>
             <td id="score_f1"></td>
-            <td><input type="text" class="form" id="f1" name="f1" /></td>
-            <td><input type="text" class="form" id="e1" name="e1" /></td>
+            <td><input type="text" class="form" id="f1" name="f1" list="pokemon-list" /></td>
+            <td><input type="text" class="form" id="e1" name="e1" list="pokemon-list" /></td>
             <td id="score_e1"></td>
         </tr>
         <tr>
             <td id="score_f2"></td>
-            <td><input type="text" class="form" id="f2" name="f2" /></td>
-            <td><input type="text" class="form" id="e2" name="e2" /></td>
+            <td><input type="text" class="form" id="f2" name="f2" list="pokemon-list" /></td>
+            <td><input type="text" class="form" id="e2" name="e2" list="pokemon-list" /></td>
             <td id="score_e2"></td>
         </tr>
         <tr>
             <td id="score_f3"></td>
-            <td><input type="text" class="form" id="f3" name="f3" /></td>
-            <td><input type="text" class="form" id="e3" name="e3" /></td>
+            <td><input type="text" class="form" id="f3" name="f3" list="pokemon-list" /></td>
+            <td><input type="text" class="form" id="e3" name="e3" list="pokemon-list" /></td>
             <td id="score_e3"></td>
         </tr>
         <tr>
             <td id="score_f4"></td>
-            <td><input type="text" class="form" id="f4" name="f4" /></td>
-            <td><input type="text" class="form" id="e4" name="e4" /></td>
+            <td><input type="text" class="form" id="f4" name="f4" list="pokemon-list" /></td>
+            <td><input type="text" class="form" id="e4" name="e4" list="pokemon-list" /></td>
             <td id="score_e4"></td>
         </tr>
         <tr>
             <td id="score_f5"></td>
-            <td><input type="text" class="form" id="f5" name="f5" /></td>
-            <td><input type="text" class="form" id="e5" name="e5" /></td>
+            <td><input type="text" class="form" id="f5" name="f5" list="pokemon-list" /></td>
+            <td><input type="text" class="form" id="e5" name="e5" list="pokemon-list" /></td>
             <td id="score_e5"></td>
         </tr>
         <tr>
             <td></td>
             <td>
-                <input type="button" value="kazuki" onclick="onKazuki();" />
-                <input type="button" value="mayuka" onclick="onMayuka();" />
                 <input type="button" value="reset" onclick="onReset1();" />
             </td>
             <td><input type="button" value="reset" onclick="onReset2();" /></td>
             <td></td>
         </tr>
-    </table>
-    <p>
-            <input type="submit" onclick="buttonClick();" />
-    </p>
-    <p>
+        </table>
+        <p>
+            <input type="submit" value="相性分析" onclick="buttonClick();" />
+            <input type="button" value="推奨選出を表示" onclick="showRecommendations();" />
+            <input type="button" value="ランキング上位を表示" onclick="showRankingPokemons();" />
+        </p>
+    </div>
+    <div id="analysis-section">
+        <h2>分析結果</h2>
+        <div id="analysis-summary"></div>
         <table id="links" border="1" style="border-collapse: collapse">
-    </p>
+        </table>
+    </div>
 
-    <script src="../src/main.js" type="module"></script>
+    <datalist id="pokemon-list"></datalist>
+
+    <script>
+        // デバッグ用
+        console.log('Loading scripts...');
+        window.addEventListener('error', (e) => {
+            console.error('Script error:', e.message, 'at', e.filename, e.lineno, e.colno);
+        });
+    </script>
+    <script src="/src/main.js" type="module"></script>
+    <script src="/src/selection-support.js" type="module"></script>
+    <script src="/src/recommendation.js" type="module"></script>
 </body>
 
 </html>

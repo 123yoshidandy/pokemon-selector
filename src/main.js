@@ -1,24 +1,57 @@
 window.addEventListener('load', init);
 
+let homeData = null;
+let detailData = null;
+
+console.log('[main.js] Script loaded successfully');
+
 
 async function init() {
-    document.getElementById("f0").value = "カイリュー";
-    document.getElementById("f1").value = "セグレイブ";
-    document.getElementById("f2").value = "ドドゲザン";
-    document.getElementById("f3").value = "サーフゴー";
-    document.getElementById("f4").value = "ハバタクカミ";
-    document.getElementById("f5").value = "テツノツツミ";
+    try {
+        const [home, detail, ranking] = await Promise.all([
+            fetch('/data/pokemon_home_data.json').then(r => r.json()),
+            fetch('/data/pokemon_detail_data.json').then(r => r.json()),
+            fetch('/data/pokemon_ranking.json').then(r => r.json())
+        ]);
+        homeData = home;
+        detailData = detail;
 
-    document.getElementById("e0").value = "カイリュー";
-    document.getElementById("e1").value = "セグレイブ";
-    document.getElementById("e2").value = "ドドゲザン";
-    document.getElementById("e3").value = "サーフゴー";
-    document.getElementById("e4").value = "ハバタクカミ";
-    document.getElementById("e5").value = "テツノツツミ";
+        // 選出率トップ6を相手パーティのデフォルトに設定
+        const topPokemon = [
+            "ディンルー",    // ID:1003
+            "パオジアン",    // ID:1002
+            "コライドン",    // ID:1007
+            "バドレックス",  // ID:898 form:2
+            "ミライドン",    // ID:1008
+            "ハバタクカミ"   // ID:987
+        ];
+
+        // 相手パーティをトップ6に設定
+        topPokemon.forEach((name, i) => {
+            document.getElementById("e" + i).value = name;
+        });
+
+    } catch (error) {
+        console.error('Failed to load additional data:', error);
+    }
+
+    // 自分のパーティのデフォルト値を設定
+    const myDefaultParty = [
+        "マスカーニャ",
+        "ラウドボーン",
+        "ウェーニバル",
+        "フシギバナ",
+        "リザードン",
+        "カメックス"
+    ];
+
+    myDefaultParty.forEach((name, i) => {
+        document.getElementById("f" + i).value = name;
+    });
 }
 
 async function buttonClick() {
-    pokedex = await fetch("pokedex.json", {
+    const pokedex = await fetch("/pokedex.json", {
     }).then(response => {
         return response.json();
     });
@@ -39,7 +72,7 @@ async function buttonClick() {
 
     // 入力されたポケモンのタイプを取得
     let types = {};
-    for (name of friends.concat(enemies)) {
+    for (const name of friends.concat(enemies)) {
         types[name] = await getType(name);
     }
 
@@ -58,9 +91,32 @@ async function buttonClick() {
 
     // 結果表示
     for (let i = 0; i < scores_f.length; i++) {
-        document.getElementById("score_f" + String(i)).textContent = scores_f[i];
-        document.getElementById("score_e" + String(i)).textContent = scores_e[i];
+        const scoreF = document.getElementById("score_f" + String(i));
+        const scoreE = document.getElementById("score_e" + String(i));
+
+        scoreF.textContent = scores_f[i];
+        scoreE.textContent = scores_e[i];
+
+        // スコアに応じて色分け
+        if (scores_f[i] > 3) {
+            scoreF.className = 'score-positive';
+        } else if (scores_f[i] < -3) {
+            scoreF.className = 'score-negative';
+        } else {
+            scoreF.className = 'score-neutral';
+        }
+
+        if (scores_e[i] > 3) {
+            scoreE.className = 'score-positive';
+        } else if (scores_e[i] < -3) {
+            scoreE.className = 'score-negative';
+        } else {
+            scoreE.className = 'score-neutral';
+        }
     }
+
+    // 分析サマリーを表示
+    displayAnalysisSummary(friends, enemies, scores_f, scores_e);
 
     // 相手のポケモンたちの情報取得のためのリンク
     var links = document.getElementById('links');
@@ -127,8 +183,8 @@ function getType(name) {
     }).then(response => {
         console.log(name);
         console.log(response);
-        types = []
-        for (type of response.types) {
+        const types = []
+        for (const type of response.types) {
             types.push(type.type.name)
         }
         return types;
@@ -142,8 +198,8 @@ function getStats(name) {
     }).then(response => {
         console.log(name);
         console.log(response);
-        stats = []
-        for (stat of response.stats) {
+        const stats = []
+        for (const stat of response.stats) {
             stats.push(stat.base_stat)
         }
         return stats;
@@ -152,11 +208,11 @@ function getStats(name) {
 
 function getScores(teamA, teamB, types) {
     let scores = [];
-    for (memberA of teamA) {
+    for (const memberA of teamA) {
 
         // 相手の各ポケモンに対する有利度を計上する
         let sum = 0;
-        for (memberB of teamB) {
+        for (const memberB of teamB) {
             sum = sum + getEffective(types[memberA], types[memberB]) - getEffective(types[memberB], types[memberA]);
         }
 
@@ -191,9 +247,9 @@ function getEffective(types_atk, types_def) {
     ];
 
     // 攻撃側のタイプのダメージの倍率を算出
-    for (atk of types_atk) {
-        effective_tmp = 1;
-        for (def of types_def) {
+    for (const atk of types_atk) {
+        let effective_tmp = 1;
+        for (const def of types_def) {
             effective_tmp = effective_tmp * typeEffective[type2id(atk)][type2id(def)];
         }
         effective = effective + effective_tmp;
@@ -206,44 +262,87 @@ function type2id(type) {
     return ["normal", "fire", "water", "electric", "grass", "ice", "fighting", "poison", "ground", "flying", "psychic", "bug", "rock", "ghost", "dragon", "dark", "steel", "fairy"].indexOf(type);
 }
 
-function onKazuki() {
-    for (let i = 0; i < 6; i++) {
-        document.getElementById("score_f" + String(i)).textContent = "";
-        document.getElementById("score_e" + String(i)).textContent = "";
-    }
-    document.getElementById("f0").value = "カイリュー";
-    document.getElementById("f1").value = "セグレイブ";
-    document.getElementById("f2").value = "デカヌチャン";
-    document.getElementById("f3").value = "キノガッサ";
-    document.getElementById("f4").value = "サーフゴー";
-    document.getElementById("f5").value = "ハバタクカミ";
-}
-
-function onMayuka() {
-    for (let i = 0; i < 6; i++) {
-        document.getElementById("score_f" + String(i)).textContent = "";
-        document.getElementById("score_e" + String(i)).textContent = "";
-    }
-    document.getElementById("f0").value = "ガブリアス";
-    document.getElementById("f1").value = "ドドゲザン";
-    document.getElementById("f2").value = "ハッサム";
-    document.getElementById("f3").value = "サーフゴー";
-    document.getElementById("f4").value = "テツノツツミ";
-    document.getElementById("f5").value = "グレンアルマ";
-}
-
 function onReset1() {
+    // 自分のパーティをデフォルト値にリセット
+    const myDefaultParty = [
+        "マスカーニャ",
+        "ラウドボーン",
+        "ウェーニバル",
+        "フシギバナ",
+        "リザードン",
+        "カメックス"
+    ];
+
     for (let i = 0; i < 6; i++) {
-        document.getElementById("f" + String(i)).value = "";
+        document.getElementById("f" + String(i)).value = myDefaultParty[i];
         document.getElementById("score_f" + String(i)).textContent = "";
         document.getElementById("score_e" + String(i)).textContent = "";
     }
 }
 
 function onReset2() {
+    // 相手パーティを選出率トップ6にリセット
+    const topPokemon = [
+        "ディンルー",
+        "パオジアン",
+        "コライドン",
+        "バドレックス",
+        "ミライドン",
+        "ハバタクカミ"
+    ];
+
     for (let i = 0; i < 6; i++) {
-        document.getElementById("e" + String(i)).value = "";
+        document.getElementById("e" + String(i)).value = topPokemon[i];
         document.getElementById("score_f" + String(i)).textContent = "";
         document.getElementById("score_e" + String(i)).textContent = "";
     }
 }
+
+function displayAnalysisSummary(friends, enemies, scoresF, scoresE) {
+    const summaryDiv = document.getElementById('analysis-summary');
+    if (!summaryDiv) return;
+
+    summaryDiv.innerHTML = '';
+
+    const totalF = scoresF.reduce((a, b) => a + b, 0);
+    const totalE = scoresE.reduce((a, b) => a + b, 0);
+
+    const summaryHTML = `
+        <div class="analysis-item">
+            <strong>総合スコア:</strong>
+            自分: <span class="${totalF > 0 ? 'score-positive' : totalF < 0 ? 'score-negative' : 'score-neutral'}">${totalF}</span>
+            / 相手: <span class="${totalE > 0 ? 'score-positive' : totalE < 0 ? 'score-negative' : 'score-neutral'}">${totalE}</span>
+        </div>
+        <div class="analysis-item">
+            <strong>推奨選出（自分）:</strong>
+            ${getTopPokemon(friends, scoresF, 3).join(', ')}
+        </div>
+        <div class="analysis-item">
+            <strong>警戒すべきポケモン（相手）:</strong>
+            ${getTopPokemon(enemies, scoresE, 3).join(', ')}
+        </div>
+    `;
+
+    summaryDiv.innerHTML = summaryHTML;
+}
+
+function getTopPokemon(pokemon, scores, count) {
+    const indexed = pokemon.map((p, i) => ({ name: p, score: scores[i], index: i }));
+    indexed.sort((a, b) => b.score - a.score);
+
+    const japaneseNames = indexed.slice(0, count).map((item) => {
+        const fieldId = pokemon === friends ? 'f' : 'e';
+        const name = document.getElementById(fieldId + item.index).value;
+        return name || item.name;
+    });
+
+    return japaneseNames;
+}
+
+let friends = [];
+let enemies = [];
+
+// グローバルスコープに関数を公開
+window.buttonClick = buttonClick;
+window.onReset1 = onReset1;
+window.onReset2 = onReset2;
