@@ -19,7 +19,7 @@ async function loadData() {
         const [ranking, home, pokedex, names, types] = await Promise.all([
             fetch('/data/pokemon_ranking.json').then(r => r.json()),
             fetch('/data/pokemon_home_data.json').then(r => r.json()),
-            fetch('/pokedex.json').then(r => r.json()),
+            fetch('/data/pokedex.json').then(r => r.json()),
             fetch('/data/assets/pokemon_names.json').then(r => r.json()),
             fetch('/data/assets/type_names.json').then(r => r.json())
         ]);

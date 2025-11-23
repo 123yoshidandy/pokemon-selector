@@ -51,7 +51,7 @@ async function init() {
 }
 
 async function buttonClick() {
-    const pokedex = await fetch("/pokedex.json", {
+    const pokedex = await fetch("/data/pokedex.json", {
     }).then(response => {
         return response.json();
     });
