@@ -214,7 +214,6 @@ class PokemonHomeDetailAPI:
         # 全6ページの詳細データを取得
         all_details = {
             'season_name': season_name,
-            'updated_at': datetime.now().isoformat(),
             'moves': [],
             'abilities': [],
             'items': [],

@@ -103,11 +103,18 @@ class PokemonHomeAPI:
         base_data = single_data if single_data else double_data
         season_name = base_data.get('name', 'Unknown Season')
 
+        # Pokemon HOMEのタイムスタンプを取得
+        # ts1とts2のうち、大きい方（新しい方）を使用
+        ts1 = base_data.get('ts1', 0)
+        ts2 = base_data.get('ts2', 0)
+        source_timestamp = max(ts1, ts2)
+
         print(f"Fetching data for season: {season_name}")
+        print(f"Source timestamp: {source_timestamp}")
 
         result = {
             'season_name': season_name,
-            'updated_at': datetime.now().isoformat(),
+            'source_timestamp': source_timestamp,  # Pokemon HOMEのタイムスタンプ
             'single': {},
             'double': {}
         }
@@ -176,7 +183,7 @@ def main():
         # 簡易版（ランキングのみ）も保存
         simple_data = {
             'season_name': data['season_name'],
-            'updated_at': data['updated_at'],
+            'source_timestamp': data.get('source_timestamp', 0),
             'single_ranking': data['single'].get('ranking', {}).get('pokemon', [])[:30],
             'double_ranking': data['double'].get('ranking', {}).get('pokemon', [])[:30]
         }
