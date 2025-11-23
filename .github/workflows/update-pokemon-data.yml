@@ -5,6 +5,9 @@ on:
     # 毎日午前3時（JST）に実行
     - cron: '0 18 * * *'  # UTC 18:00 = JST 3:00
   workflow_dispatch:  # 手動実行も可能
+  push:
+    branches:
+      - main
 
 jobs:
   update-data:
