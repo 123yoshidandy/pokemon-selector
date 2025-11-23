@@ -122,7 +122,7 @@ async function calculateSelectionScores(myPokemon, enemyPokemon) {
     // pokedexデータを取得（まだ読み込まれていない場合）
     if (!window.pokedexData) {
         try {
-            const response = await fetch('/data/pokedex.json');
+            const response = await fetch('data/pokedex.json');
             window.pokedexData = await response.json();
         } catch (error) {
             console.error('Failed to load pokedex:', error);

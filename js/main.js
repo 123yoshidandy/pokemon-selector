@@ -9,9 +9,9 @@ console.log('[main.js] Script loaded successfully');
 async function init() {
     try {
         const [home, detail, ranking] = await Promise.all([
-            fetch('/data/pokemon_home_data.json').then(r => r.json()),
-            fetch('/data/pokemon_detail_data.json').then(r => r.json()),
-            fetch('/data/pokemon_ranking.json').then(r => r.json())
+            fetch('data/pokemon_home_data.json').then(r => r.json()),
+            fetch('data/pokemon_detail_data.json').then(r => r.json()),
+            fetch('data/pokemon_ranking.json').then(r => r.json())
         ]);
         homeData = home;
         detailData = detail;
@@ -51,7 +51,7 @@ async function init() {
 }
 
 async function buttonClick() {
-    const pokedex = await fetch("/data/pokedex.json", {
+    const pokedex = await fetch("data/pokedex.json", {
     }).then(response => {
         return response.json();
     });
