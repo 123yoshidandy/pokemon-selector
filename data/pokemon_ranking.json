@@ -1,6 +1,6 @@
 {
   "season_name": "シーズン36",
-  "source_timestamp": 1764007217,
+  "source_timestamp": 1764090008,
   "single_ranking": [
     {
       "id": 1003,
@@ -177,11 +177,11 @@
       "form": 0
     },
     {
-      "id": 987,
+      "id": 591,
       "form": 0
     },
     {
-      "id": 591,
+      "id": 987,
       "form": 0
     },
     {
@@ -241,7 +241,7 @@
       "form": 0
     },
     {
-      "id": 892,
+      "id": 1003,
       "form": 0
     }
   ]
