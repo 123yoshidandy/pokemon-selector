@@ -1,6 +1,6 @@
 {
   "season_name": "シーズン37",
-  "source_timestamp": 1765303209,
+  "source_timestamp": 1765386008,
   "single_ranking": [
     {
       "id": 1003,
@@ -201,11 +201,11 @@
       "form": 0
     },
     {
-      "id": 235,
+      "id": 861,
       "form": 0
     },
     {
-      "id": 861,
+      "id": 235,
       "form": 0
     },
     {
@@ -241,7 +241,7 @@
       "form": 0
     },
     {
-      "id": 992,
+      "id": 1003,
       "form": 0
     }
   ]
