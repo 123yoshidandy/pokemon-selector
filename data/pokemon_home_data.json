@@ -1,6 +1,6 @@
 {
   "season_name": "シーズン37",
-  "source_timestamp": 1766426409,
+  "source_timestamp": 1766509210,
   "single": {
     "ranking": {
       "pokemon": [
@@ -244,11 +244,11 @@
           "form": 0
         },
         {
-          "id": 992,
+          "id": 1024,
           "form": 0
         },
         {
-          "id": 1024,
+          "id": 992,
           "form": 0
         }
       ]
