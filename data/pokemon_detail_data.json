@@ -14,7 +14,7 @@
       "pokemon_name": "フシギソウ",
       "form_id": "0",
       "rank": 2,
-      "move_name": "どくどく",
+      "move_name": "やどりぎのタネ",
       "usage_rate": "100.0"
     },
     {
@@ -30,7 +30,7 @@
       "pokemon_name": "フシギソウ",
       "form_id": "0",
       "rank": 4,
-      "move_name": "やどりぎのタネ",
+      "move_name": "どくどく",
       "usage_rate": "100.0"
     },
     {
@@ -46,7 +46,7 @@
       "pokemon_name": "リザードン",
       "form_id": "0",
       "rank": 2,
-      "move_name": "りゅうのはどう",
+      "move_name": "エアスラッシュ",
       "usage_rate": "100.0"
     },
     {
@@ -54,7 +54,7 @@
       "pokemon_name": "リザードン",
       "form_id": "0",
       "rank": 3,
-      "move_name": "エアスラッシュ",
+      "move_name": "りゅうのはどう",
       "usage_rate": "100.0"
     },
     {
@@ -102,7 +102,7 @@
       "pokemon_name": "ピクシー",
       "form_id": "0",
       "rank": 5,
-      "move_name": "ムーンフォース",
+      "move_name": "コスモパワー",
       "usage_rate": "14.3"
     },
     {
@@ -118,7 +118,7 @@
       "pokemon_name": "ピクシー",
       "form_id": "0",
       "rank": 7,
-      "move_name": "コスモパワー",
+      "move_name": "ムーンフォース",
       "usage_rate": "14.3"
     },
     {
@@ -134,7 +134,7 @@
       "pokemon_name": "キュウコン",
       "form_id": "1",
       "rank": 2,
-      "move_name": "アンコール",
+      "move_name": "ムーンフォース",
       "usage_rate": "69.6"
     },
     {
@@ -142,7 +142,7 @@
       "pokemon_name": "キュウコン",
       "form_id": "1",
       "rank": 3,
-      "move_name": "ムーンフォース",
+      "move_name": "アンコール",
       "usage_rate": "69.6"
     },
     {
@@ -158,7 +158,7 @@
       "pokemon_name": "キュウコン",
       "form_id": "1",
       "rank": 5,
-      "move_name": "フリーズドライ",
+      "move_name": "ミストフィールド",
       "usage_rate": "21.7"
     },
     {
@@ -166,14 +166,6 @@
       "pokemon_name": "キュウコン",
       "form_id": "1",
       "rank": 6,
-      "move_name": "いたみわけ",
-      "usage_rate": "21.7"
-    },
-    {
-      "pokemon_id": "38",
-      "pokemon_name": "キュウコン",
-      "form_id": "1",
-      "rank": 7,
       "move_name": "こごえるかぜ",
       "usage_rate": "21.7"
     },
@@ -181,8 +173,16 @@
       "pokemon_id": "38",
       "pokemon_name": "キュウコン",
       "form_id": "1",
+      "rank": 7,
+      "move_name": "いたみわけ",
+      "usage_rate": "21.7"
+    },
+    {
+      "pokemon_id": "38",
+      "pokemon_name": "キュウコン",
+      "form_id": "1",
       "rank": 8,
-      "move_name": "ミストフィールド",
+      "move_name": "フリーズドライ",
       "usage_rate": "21.7"
     },
     {
@@ -254,7 +254,7 @@
       "pokemon_name": "ラフレシア",
       "form_id": "0",
       "rank": 2,
-      "move_name": "やどりぎのタネ",
+      "move_name": "どくどく",
       "usage_rate": "80.0"
     },
     {
@@ -262,7 +262,7 @@
       "pokemon_name": "ラフレシア",
       "form_id": "0",
       "rank": 3,
-      "move_name": "どくどく",
+      "move_name": "やどりぎのタネ",
       "usage_rate": "80.0"
     },
     {
@@ -382,7 +382,7 @@
       "pokemon_name": "ウインディ",
       "form_id": "0",
       "rank": 5,
-      "move_name": "しんそく",
+      "move_name": "フレアドライブ",
       "usage_rate": "38.5"
     },
     {
@@ -390,7 +390,7 @@
       "pokemon_name": "ウインディ",
       "form_id": "0",
       "rank": 6,
-      "move_name": "フレアドライブ",
+      "move_name": "しんそく",
       "usage_rate": "38.5"
     },
     {
@@ -422,7 +422,7 @@
       "pokemon_name": "ゴローニャ",
       "form_id": "0",
       "rank": 1,
-      "move_name": "かわらわり",
+      "move_name": "ステルスロック",
       "usage_rate": "100.0"
     },
     {
@@ -438,7 +438,7 @@
       "pokemon_name": "ゴローニャ",
       "form_id": "0",
       "rank": 3,
-      "move_name": "ステルスロック",
+      "move_name": "かわらわり",
       "usage_rate": "100.0"
     },
     {
@@ -454,14 +454,6 @@
       "pokemon_name": "ヤドラン",
       "form_id": "0",
       "rank": 1,
-      "move_name": "でんじは",
-      "usage_rate": "100.0"
-    },
-    {
-      "pokemon_id": "80",
-      "pokemon_name": "ヤドラン",
-      "form_id": "0",
-      "rank": 2,
       "move_name": "ボディプレス",
       "usage_rate": "100.0"
     },
@@ -469,8 +461,16 @@
       "pokemon_id": "80",
       "pokemon_name": "ヤドラン",
       "form_id": "0",
+      "rank": 2,
+      "move_name": "でんじは",
+      "usage_rate": "100.0"
+    },
+    {
+      "pokemon_id": "80",
+      "pokemon_name": "ヤドラン",
+      "form_id": "0",
       "rank": 3,
-      "move_name": "ねっとう",
+      "move_name": "なまける",
       "usage_rate": "100.0"
     },
     {
@@ -478,7 +478,7 @@
       "pokemon_name": "ヤドラン",
       "form_id": "0",
       "rank": 4,
-      "move_name": "なまける",
+      "move_name": "ねっとう",
       "usage_rate": "100.0"
     },
     {
@@ -582,7 +582,7 @@
       "pokemon_name": "パルシェン",
       "form_id": "0",
       "rank": 3,
-      "move_name": "からをやぶる",
+      "move_name": "こおりのつぶて",
       "usage_rate": "100.0"
     },
     {
@@ -590,7 +590,7 @@
       "pokemon_name": "パルシェン",
       "form_id": "0",
       "rank": 4,
-      "move_name": "こおりのつぶて",
+      "move_name": "からをやぶる",
       "usage_rate": "100.0"
     },
     {
@@ -630,7 +630,7 @@
       "pokemon_name": "ゲンガー",
       "form_id": "0",
       "rank": 5,
-      "move_name": "ヘドロばくだん",
+      "move_name": "みちづれ",
       "usage_rate": "33.3"
     },
     {
@@ -638,7 +638,7 @@
       "pokemon_name": "ゲンガー",
       "form_id": "0",
       "rank": 6,
-      "move_name": "みちづれ",
+      "move_name": "ヘドロばくだん",
       "usage_rate": "33.3"
     },
     {
@@ -742,7 +742,7 @@
       "pokemon_name": "サイドン",
       "form_id": "0",
       "rank": 3,
-      "move_name": "つるぎのまい",
+      "move_name": "ロックブラスト",
       "usage_rate": "100.0"
     },
     {
@@ -750,7 +750,7 @@
       "pokemon_name": "サイドン",
       "form_id": "0",
       "rank": 4,
-      "move_name": "ロックブラスト",
+      "move_name": "つるぎのまい",
       "usage_rate": "100.0"
     },
     {
@@ -822,7 +822,7 @@
       "pokemon_name": "ブーバー",
       "form_id": "0",
       "rank": 1,
-      "move_name": "オーバーヒート",
+      "move_name": "はたきおとす",
       "usage_rate": "100.0"
     },
     {
@@ -830,7 +830,7 @@
       "pokemon_name": "ブーバー",
       "form_id": "0",
       "rank": 2,
-      "move_name": "はたきおとす",
+      "move_name": "オーバーヒート",
       "usage_rate": "100.0"
     },
     {
@@ -854,7 +854,7 @@
       "pokemon_name": "ギャラドス",
       "form_id": "0",
       "rank": 1,
-      "move_name": "ちょうはつ",
+      "move_name": "でんじは",
       "usage_rate": "100.0"
     },
     {
@@ -862,7 +862,7 @@
       "pokemon_name": "ギャラドス",
       "form_id": "0",
       "rank": 2,
-      "move_name": "たきのぼり",
+      "move_name": "ちょうはつ",
       "usage_rate": "100.0"
     },
     {
@@ -870,7 +870,7 @@
       "pokemon_name": "ギャラドス",
       "form_id": "0",
       "rank": 3,
-      "move_name": "じしん",
+      "move_name": "たきのぼり",
       "usage_rate": "100.0"
     },
     {
@@ -878,7 +878,7 @@
       "pokemon_name": "ギャラドス",
       "form_id": "0",
       "rank": 4,
-      "move_name": "でんじは",
+      "move_name": "じしん",
       "usage_rate": "100.0"
     },
     {
@@ -934,7 +934,7 @@
       "pokemon_name": "カビゴン",
       "form_id": "0",
       "rank": 6,
-      "move_name": "まもる",
+      "move_name": "ヘビーボンバー",
       "usage_rate": "32.1"
     },
     {
@@ -942,7 +942,7 @@
       "pokemon_name": "カビゴン",
       "form_id": "0",
       "rank": 7,
-      "move_name": "ヘビーボンバー",
+      "move_name": "まもる",
       "usage_rate": "32.1"
     },
     {
@@ -1222,14 +1222,6 @@
       "pokemon_name": "オオタチ",
       "form_id": "0",
       "rank": 1,
-      "move_name": "はたきおとす",
-      "usage_rate": "100.0"
-    },
-    {
-      "pokemon_id": "162",
-      "pokemon_name": "オオタチ",
-      "form_id": "0",
-      "rank": 2,
       "move_name": "とんぼがえり",
       "usage_rate": "100.0"
     },
@@ -1237,8 +1229,16 @@
       "pokemon_id": "162",
       "pokemon_name": "オオタチ",
       "form_id": "0",
-      "rank": 3,
+      "rank": 2,
       "move_name": "トリック",
+      "usage_rate": "100.0"
+    },
+    {
+      "pokemon_id": "162",
+      "pokemon_name": "オオタチ",
+      "form_id": "0",
+      "rank": 3,
+      "move_name": "はたきおとす",
       "usage_rate": "100.0"
     },
     {
@@ -1286,14 +1286,6 @@
       "pokemon_name": "マリルリ",
       "form_id": "0",
       "rank": 5,
-      "move_name": "はたきおとす",
-      "usage_rate": "33.3"
-    },
-    {
-      "pokemon_id": "184",
-      "pokemon_name": "マリルリ",
-      "form_id": "0",
-      "rank": 6,
       "move_name": "うずしお",
       "usage_rate": "33.3"
     },
@@ -1301,8 +1293,16 @@
       "pokemon_id": "184",
       "pokemon_name": "マリルリ",
       "form_id": "0",
-      "rank": 7,
+      "rank": 6,
       "move_name": "まもる",
+      "usage_rate": "33.3"
+    },
+    {
+      "pokemon_id": "184",
+      "pokemon_name": "マリルリ",
+      "form_id": "0",
+      "rank": 7,
+      "move_name": "はたきおとす",
       "usage_rate": "33.3"
     },
     {
@@ -1358,7 +1358,7 @@
       "pokemon_name": "ヌオー",
       "form_id": "0",
       "rank": 1,
-      "move_name": "じこさいせい",
+      "move_name": "どくどく",
       "usage_rate": "100.0"
     },
     {
@@ -1366,7 +1366,7 @@
       "pokemon_name": "ヌオー",
       "form_id": "0",
       "rank": 2,
-      "move_name": "どくどく",
+      "move_name": "じこさいせい",
       "usage_rate": "100.0"
     },
     {
@@ -1422,14 +1422,6 @@
       "pokemon_name": "エーフィ",
       "form_id": "0",
       "rank": 4,
-      "move_name": "ひかりのかべ",
-      "usage_rate": "48.0"
-    },
-    {
-      "pokemon_id": "196",
-      "pokemon_name": "エーフィ",
-      "form_id": "0",
-      "rank": 5,
       "move_name": "Unknown_917",
       "usage_rate": "48.0"
     },
@@ -1437,8 +1429,16 @@
       "pokemon_id": "196",
       "pokemon_name": "エーフィ",
       "form_id": "0",
-      "rank": 6,
+      "rank": 5,
       "move_name": "あくび",
+      "usage_rate": "48.0"
+    },
+    {
+      "pokemon_id": "196",
+      "pokemon_name": "エーフィ",
+      "form_id": "0",
+      "rank": 6,
+      "move_name": "ひかりのかべ",
       "usage_rate": "48.0"
     },
     {
@@ -1526,7 +1526,7 @@
       "pokemon_name": "ブラッキー",
       "form_id": "0",
       "rank": 7,
-      "move_name": "ちょうはつ",
+      "move_name": "バトンタッチ",
       "usage_rate": "5.4"
     },
     {
@@ -1534,7 +1534,7 @@
       "pokemon_name": "ブラッキー",
       "form_id": "0",
       "rank": 8,
-      "move_name": "バトンタッチ",
+      "move_name": "ちょうはつ",
       "usage_rate": "5.4"
     },
     {
@@ -1590,22 +1590,6 @@
       "pokemon_name": "フォレトス",
       "form_id": "0",
       "rank": 2,
-      "move_name": "いたみわけ",
-      "usage_rate": "50.0"
-    },
-    {
-      "pokemon_id": "205",
-      "pokemon_name": "フォレトス",
-      "form_id": "0",
-      "rank": 3,
-      "move_name": "ボディプレス",
-      "usage_rate": "50.0"
-    },
-    {
-      "pokemon_id": "205",
-      "pokemon_name": "フォレトス",
-      "form_id": "0",
-      "rank": 4,
       "move_name": "とびかかる",
       "usage_rate": "50.0"
     },
@@ -1613,7 +1597,7 @@
       "pokemon_id": "205",
       "pokemon_name": "フォレトス",
       "form_id": "0",
-      "rank": 5,
+      "rank": 3,
       "move_name": "でんじは",
       "usage_rate": "50.0"
     },
@@ -1621,8 +1605,24 @@
       "pokemon_id": "205",
       "pokemon_name": "フォレトス",
       "form_id": "0",
-      "rank": 6,
+      "rank": 4,
       "move_name": "ボルトチェンジ",
+      "usage_rate": "50.0"
+    },
+    {
+      "pokemon_id": "205",
+      "pokemon_name": "フォレトス",
+      "form_id": "0",
+      "rank": 5,
+      "move_name": "いたみわけ",
+      "usage_rate": "50.0"
+    },
+    {
+      "pokemon_id": "205",
+      "pokemon_name": "フォレトス",
+      "form_id": "0",
+      "rank": 6,
+      "move_name": "ボディプレス",
       "usage_rate": "50.0"
     },
     {
@@ -1670,7 +1670,7 @@
       "pokemon_name": "ハリーセン",
       "form_id": "1",
       "rank": 5,
-      "move_name": "かみくだく",
+      "move_name": "どくばりセンボン",
       "usage_rate": "21.4"
     },
     {
@@ -1678,7 +1678,7 @@
       "pokemon_name": "ハリーセン",
       "form_id": "1",
       "rank": 6,
-      "move_name": "どくばりセンボン",
+      "move_name": "かみくだく",
       "usage_rate": "21.4"
     },
     {
@@ -1766,14 +1766,6 @@
       "pokemon_name": "リングマ",
       "form_id": "0",
       "rank": 1,
-      "move_name": "れいとうパンチ",
-      "usage_rate": "100.0"
-    },
-    {
-      "pokemon_id": "217",
-      "pokemon_name": "リングマ",
-      "form_id": "0",
-      "rank": 2,
       "move_name": "からげんき",
       "usage_rate": "100.0"
     },
@@ -1781,8 +1773,16 @@
       "pokemon_id": "217",
       "pokemon_name": "リングマ",
       "form_id": "0",
-      "rank": 3,
+      "rank": 2,
       "move_name": "つるぎのまい",
+      "usage_rate": "100.0"
+    },
+    {
+      "pokemon_id": "217",
+      "pokemon_name": "リングマ",
+      "form_id": "0",
+      "rank": 3,
+      "move_name": "れいとうパンチ",
       "usage_rate": "100.0"
     },
     {
@@ -1798,7 +1798,7 @@
       "pokemon_name": "イノムー",
       "form_id": "0",
       "rank": 1,
-      "move_name": "ゆきなだれ",
+      "move_name": "こおりのつぶて",
       "usage_rate": "100.0"
     },
     {
@@ -1806,7 +1806,7 @@
       "pokemon_name": "イノムー",
       "form_id": "0",
       "rank": 2,
-      "move_name": "こおりのつぶて",
+      "move_name": "ゆきなだれ",
       "usage_rate": "100.0"
     },
     {
@@ -1830,7 +1830,7 @@
       "pokemon_name": "エアームド",
       "form_id": "0",
       "rank": 1,
-      "move_name": "ちょうはつ",
+      "move_name": "ボディプレス",
       "usage_rate": "100.0"
     },
     {
@@ -1838,7 +1838,7 @@
       "pokemon_name": "エアームド",
       "form_id": "0",
       "rank": 2,
-      "move_name": "ボディプレス",
+      "move_name": "ちょうはつ",
       "usage_rate": "100.0"
     },
     {
@@ -1894,7 +1894,7 @@
       "pokemon_name": "ドンファン",
       "form_id": "0",
       "rank": 1,
-      "move_name": "こおりのつぶて",
+      "move_name": "がむしゃら",
       "usage_rate": "100.0"
     },
     {
@@ -1902,7 +1902,7 @@
       "pokemon_name": "ドンファン",
       "form_id": "0",
       "rank": 2,
-      "move_name": "がむしゃら",
+      "move_name": "こおりのつぶて",
       "usage_rate": "100.0"
     },
     {
@@ -2006,7 +2006,7 @@
       "pokemon_name": "ドーブル",
       "form_id": "0",
       "rank": 1,
-      "move_name": "キノコのほうし",
+      "move_name": "バトンタッチ",
       "usage_rate": "100.0"
     },
     {
@@ -2014,7 +2014,7 @@
       "pokemon_name": "ドーブル",
       "form_id": "0",
       "rank": 2,
-      "move_name": "バトンタッチ",
+      "move_name": "キノコのほうし",
       "usage_rate": "100.0"
     },
     {
@@ -2158,7 +2158,7 @@
       "pokemon_name": "エンテイ",
       "form_id": "0",
       "rank": 2,
-      "move_name": "テラバースト",
+      "move_name": "しんそく",
       "usage_rate": "100.0"
     },
     {
@@ -2166,7 +2166,7 @@
       "pokemon_name": "エンテイ",
       "form_id": "0",
       "rank": 3,
-      "move_name": "しんそく",
+      "move_name": "テラバースト",
       "usage_rate": "100.0"
     },
     {
@@ -2342,7 +2342,7 @@
       "pokemon_name": "ルギア",
       "form_id": "0",
       "rank": 10,
-      "move_name": "あまごい",
+      "move_name": "サイコキネシス",
       "usage_rate": "1.1"
     },
     {
@@ -2446,7 +2446,7 @@
       "pokemon_name": "ジュカイン",
       "form_id": "0",
       "rank": 3,
-      "move_name": "こらえる",
+      "move_name": "がむしゃら",
       "usage_rate": "100.0"
     },
     {
@@ -2454,7 +2454,7 @@
       "pokemon_name": "ジュカイン",
       "form_id": "0",
       "rank": 4,
-      "move_name": "がむしゃら",
+      "move_name": "こらえる",
       "usage_rate": "100.0"
     },
     {
@@ -2630,7 +2630,7 @@
       "pokemon_name": "サーナイト",
       "form_id": "0",
       "rank": 6,
-      "move_name": "Unknown_917",
+      "move_name": "サイコキネシス",
       "usage_rate": "7.7"
     },
     {
@@ -2638,7 +2638,7 @@
       "pokemon_name": "サーナイト",
       "form_id": "0",
       "rank": 7,
-      "move_name": "サイコキネシス",
+      "move_name": "Unknown_917",
       "usage_rate": "7.7"
     },
     {
@@ -2806,7 +2806,7 @@
       "pokemon_name": "ヤミラミ",
       "form_id": "0",
       "rank": 7,
-      "move_name": "でんじは",
+      "move_name": "おにび",
       "usage_rate": "8.3"
     },
     {
@@ -2814,7 +2814,7 @@
       "pokemon_name": "ヤミラミ",
       "form_id": "0",
       "rank": 8,
-      "move_name": "おにび",
+      "move_name": "でんじは",
       "usage_rate": "8.3"
     },
     {
@@ -2870,7 +2870,7 @@
       "pokemon_name": "イルミーゼ",
       "form_id": "0",
       "rank": 3,
-      "move_name": "まとわりつく",
+      "move_name": "むしのていこう",
       "usage_rate": "100.0"
     },
     {
@@ -2878,7 +2878,7 @@
       "pokemon_name": "イルミーゼ",
       "form_id": "0",
       "rank": 4,
-      "move_name": "むしのていこう",
+      "move_name": "まとわりつく",
       "usage_rate": "100.0"
     },
     {
@@ -2886,7 +2886,7 @@
       "pokemon_name": "ザングース",
       "form_id": "0",
       "rank": 1,
-      "move_name": "いわなだれ",
+      "move_name": "はたきおとす",
       "usage_rate": "100.0"
     },
     {
@@ -2894,7 +2894,7 @@
       "pokemon_name": "ザングース",
       "form_id": "0",
       "rank": 2,
-      "move_name": "でんこうせっか",
+      "move_name": "いわなだれ",
       "usage_rate": "100.0"
     },
     {
@@ -2902,7 +2902,7 @@
       "pokemon_name": "ザングース",
       "form_id": "0",
       "rank": 3,
-      "move_name": "はたきおとす",
+      "move_name": "でんこうせっか",
       "usage_rate": "100.0"
     },
     {
@@ -2926,7 +2926,7 @@
       "pokemon_name": "ナマズン",
       "form_id": "0",
       "rank": 2,
-      "move_name": "じわれ",
+      "move_name": "なみのり",
       "usage_rate": "100.0"
     },
     {
@@ -2934,7 +2934,7 @@
       "pokemon_name": "ナマズン",
       "form_id": "0",
       "rank": 3,
-      "move_name": "なみのり",
+      "move_name": "じわれ",
       "usage_rate": "100.0"
     },
     {
@@ -2966,7 +2966,7 @@
       "pokemon_name": "ミロカロス",
       "form_id": "0",
       "rank": 3,
-      "move_name": "ミラーコート",
+      "move_name": "じこさいせい",
       "usage_rate": "100.0"
     },
     {
@@ -2974,7 +2974,7 @@
       "pokemon_name": "ミロカロス",
       "form_id": "0",
       "rank": 4,
-      "move_name": "じこさいせい",
+      "move_name": "ミラーコート",
       "usage_rate": "100.0"
     },
     {
@@ -3038,14 +3038,6 @@
       "pokemon_name": "ボーマンダ",
       "form_id": "0",
       "rank": 1,
-      "move_name": "ぼうふう",
-      "usage_rate": "100.0"
-    },
-    {
-      "pokemon_id": "373",
-      "pokemon_name": "ボーマンダ",
-      "form_id": "0",
-      "rank": 2,
       "move_name": "ハイドロポンプ",
       "usage_rate": "100.0"
     },
@@ -3053,7 +3045,7 @@
       "pokemon_id": "373",
       "pokemon_name": "ボーマンダ",
       "form_id": "0",
-      "rank": 3,
+      "rank": 2,
       "move_name": "だいもんじ",
       "usage_rate": "100.0"
     },
@@ -3061,8 +3053,16 @@
       "pokemon_id": "373",
       "pokemon_name": "ボーマンダ",
       "form_id": "0",
-      "rank": 4,
+      "rank": 3,
       "move_name": "りゅうせいぐん",
+      "usage_rate": "100.0"
+    },
+    {
+      "pokemon_id": "373",
+      "pokemon_name": "ボーマンダ",
+      "form_id": "0",
+      "rank": 4,
+      "move_name": "ぼうふう",
       "usage_rate": "100.0"
     },
     {
@@ -3134,7 +3134,7 @@
       "pokemon_name": "レジロック",
       "form_id": "0",
       "rank": 3,
-      "move_name": "じゅうりょく",
+      "move_name": "ロックブラスト",
       "usage_rate": "45.5"
     },
     {
@@ -3142,7 +3142,7 @@
       "pokemon_name": "レジロック",
       "form_id": "0",
       "rank": 4,
-      "move_name": "ロックブラスト",
+      "move_name": "じゅうりょく",
       "usage_rate": "45.5"
     },
     {
@@ -3158,7 +3158,7 @@
       "pokemon_name": "レジロック",
       "form_id": "0",
       "rank": 6,
-      "move_name": "てっぺき",
+      "move_name": "ボディプレス",
       "usage_rate": "36.4"
     },
     {
@@ -3166,7 +3166,7 @@
       "pokemon_name": "レジロック",
       "form_id": "0",
       "rank": 7,
-      "move_name": "ボディプレス",
+      "move_name": "てっぺき",
       "usage_rate": "36.4"
     },
     {
@@ -3206,7 +3206,7 @@
       "pokemon_name": "レジスチル",
       "form_id": "0",
       "rank": 2,
-      "move_name": "みがわり",
+      "move_name": "ボディプレス",
       "usage_rate": "100.0"
     },
     {
@@ -3214,7 +3214,7 @@
       "pokemon_name": "レジスチル",
       "form_id": "0",
       "rank": 3,
-      "move_name": "ボディプレス",
+      "move_name": "みがわり",
       "usage_rate": "100.0"
     },
     {
@@ -3230,7 +3230,7 @@
       "pokemon_name": "ラティオス",
       "form_id": "0",
       "rank": 1,
-      "move_name": "りゅうせいぐん",
+      "move_name": "ラスターパージ",
       "usage_rate": "100.0"
     },
     {
@@ -3238,7 +3238,7 @@
       "pokemon_name": "ラティオス",
       "form_id": "0",
       "rank": 2,
-      "move_name": "ラスターパージ",
+      "move_name": "りゅうせいぐん",
       "usage_rate": "100.0"
     },
     {
@@ -3262,14 +3262,6 @@
       "pokemon_name": "ラティオス",
       "form_id": "0",
       "rank": 5,
-      "move_name": "みがわり",
-      "usage_rate": "40.0"
-    },
-    {
-      "pokemon_id": "381",
-      "pokemon_name": "ラティオス",
-      "form_id": "0",
-      "rank": 6,
       "move_name": "くさむすび",
       "usage_rate": "40.0"
     },
@@ -3277,8 +3269,16 @@
       "pokemon_id": "381",
       "pokemon_name": "ラティオス",
       "form_id": "0",
+      "rank": 6,
+      "move_name": "みがわり",
+      "usage_rate": "40.0"
+    },
+    {
+      "pokemon_id": "381",
+      "pokemon_name": "ラティオス",
+      "form_id": "0",
       "rank": 7,
-      "move_name": "テラバースト",
+      "move_name": "れいとうビーム",
       "usage_rate": "20.0"
     },
     {
@@ -3286,7 +3286,7 @@
       "pokemon_name": "ラティオス",
       "form_id": "0",
       "rank": 8,
-      "move_name": "れいとうビーム",
+      "move_name": "テラバースト",
       "usage_rate": "20.0"
     },
     {
@@ -3558,7 +3558,7 @@
       "pokemon_name": "ムクホーク",
       "form_id": "0",
       "rank": 4,
-      "move_name": "すてみタックル",
+      "move_name": "ギガインパクト",
       "usage_rate": "50.0"
     },
     {
@@ -3566,7 +3566,7 @@
       "pokemon_name": "ムクホーク",
       "form_id": "0",
       "rank": 5,
-      "move_name": "ギガインパクト",
+      "move_name": "すてみタックル",
       "usage_rate": "50.0"
     },
     {
@@ -3678,7 +3678,7 @@
       "pokemon_name": "トリトドン",
       "form_id": "0",
       "rank": 5,
-      "move_name": "ひやみず",
+      "move_name": "あくび",
       "usage_rate": "50.0"
     },
     {
@@ -3686,7 +3686,7 @@
       "pokemon_name": "トリトドン",
       "form_id": "0",
       "rank": 6,
-      "move_name": "あくび",
+      "move_name": "ひやみず",
       "usage_rate": "50.0"
     },
     {
@@ -3718,7 +3718,7 @@
       "pokemon_name": "エテボース",
       "form_id": "0",
       "rank": 2,
-      "move_name": "はたきおとす",
+      "move_name": "ねこだまし",
       "usage_rate": "100.0"
     },
     {
@@ -3726,7 +3726,7 @@
       "pokemon_name": "エテボース",
       "form_id": "0",
       "rank": 3,
-      "move_name": "ねこだまし",
+      "move_name": "はたきおとす",
       "usage_rate": "100.0"
     },
     {
@@ -3750,14 +3750,6 @@
       "pokemon_name": "フワライド",
       "form_id": "0",
       "rank": 2,
-      "move_name": "シャドーボール",
-      "usage_rate": "55.6"
-    },
-    {
-      "pokemon_id": "426",
-      "pokemon_name": "フワライド",
-      "form_id": "0",
-      "rank": 3,
       "move_name": "なげつける",
       "usage_rate": "55.6"
     },
@@ -3765,8 +3757,16 @@
       "pokemon_id": "426",
       "pokemon_name": "フワライド",
       "form_id": "0",
-      "rank": 4,
+      "rank": 3,
       "move_name": "みちづれ",
+      "usage_rate": "55.6"
+    },
+    {
+      "pokemon_id": "426",
+      "pokemon_name": "フワライド",
+      "form_id": "0",
+      "rank": 4,
+      "move_name": "シャドーボール",
       "usage_rate": "55.6"
     },
     {
@@ -3958,22 +3958,6 @@
       "pokemon_name": "ルカリオ",
       "form_id": "0",
       "rank": 4,
-      "move_name": "てっていこうせん",
-      "usage_rate": "50.0"
-    },
-    {
-      "pokemon_id": "448",
-      "pokemon_name": "ルカリオ",
-      "form_id": "0",
-      "rank": 5,
-      "move_name": "はどうだん",
-      "usage_rate": "50.0"
-    },
-    {
-      "pokemon_id": "448",
-      "pokemon_name": "ルカリオ",
-      "form_id": "0",
-      "rank": 6,
       "move_name": "つるぎのまい",
       "usage_rate": "50.0"
     },
@@ -3981,7 +3965,7 @@
       "pokemon_id": "448",
       "pokemon_name": "ルカリオ",
       "form_id": "0",
-      "rank": 7,
+      "rank": 5,
       "move_name": "しんそく",
       "usage_rate": "50.0"
     },
@@ -3989,8 +3973,24 @@
       "pokemon_id": "448",
       "pokemon_name": "ルカリオ",
       "form_id": "0",
-      "rank": 8,
+      "rank": 6,
       "move_name": "バレットパンチ",
+      "usage_rate": "50.0"
+    },
+    {
+      "pokemon_id": "448",
+      "pokemon_name": "ルカリオ",
+      "form_id": "0",
+      "rank": 7,
+      "move_name": "はどうだん",
+      "usage_rate": "50.0"
+    },
+    {
+      "pokemon_id": "448",
+      "pokemon_name": "ルカリオ",
+      "form_id": "0",
+      "rank": 8,
+      "move_name": "てっていこうせん",
       "usage_rate": "50.0"
     },
     {
@@ -4062,7 +4062,7 @@
       "pokemon_name": "ドクロッグ",
       "form_id": "0",
       "rank": 1,
-      "move_name": "まもる",
+      "move_name": "どくどく",
       "usage_rate": "100.0"
     },
     {
@@ -4070,14 +4070,6 @@
       "pokemon_name": "ドクロッグ",
       "form_id": "0",
       "rank": 2,
-      "move_name": "ドレインパンチ",
-      "usage_rate": "100.0"
-    },
-    {
-      "pokemon_id": "454",
-      "pokemon_name": "ドクロッグ",
-      "form_id": "0",
-      "rank": 3,
       "move_name": "アンコール",
       "usage_rate": "100.0"
     },
@@ -4085,8 +4077,16 @@
       "pokemon_id": "454",
       "pokemon_name": "ドクロッグ",
       "form_id": "0",
+      "rank": 3,
+      "move_name": "まもる",
+      "usage_rate": "100.0"
+    },
+    {
+      "pokemon_id": "454",
+      "pokemon_name": "ドクロッグ",
+      "form_id": "0",
       "rank": 4,
-      "move_name": "どくどく",
+      "move_name": "ドレインパンチ",
       "usage_rate": "100.0"
     },
     {
@@ -4142,7 +4142,7 @@
       "pokemon_name": "ドサイドン",
       "form_id": "0",
       "rank": 2,
-      "move_name": "つるぎのまい",
+      "move_name": "つのドリル",
       "usage_rate": "100.0"
     },
     {
@@ -4158,7 +4158,7 @@
       "pokemon_name": "ドサイドン",
       "form_id": "0",
       "rank": 4,
-      "move_name": "つのドリル",
+      "move_name": "つるぎのまい",
       "usage_rate": "100.0"
     },
     {
@@ -4166,7 +4166,7 @@
       "pokemon_name": "エレキブル",
       "form_id": "0",
       "rank": 1,
-      "move_name": "ひかりのかべ",
+      "move_name": "でんじは",
       "usage_rate": "100.0"
     },
     {
@@ -4174,7 +4174,7 @@
       "pokemon_name": "エレキブル",
       "form_id": "0",
       "rank": 2,
-      "move_name": "でんじは",
+      "move_name": "ひかりのかべ",
       "usage_rate": "100.0"
     },
     {
@@ -4198,7 +4198,7 @@
       "pokemon_name": "グレイシア",
       "form_id": "0",
       "rank": 1,
-      "move_name": "Unknown_914",
+      "move_name": "ミラーコート",
       "usage_rate": "100.0"
     },
     {
@@ -4214,7 +4214,7 @@
       "pokemon_name": "グレイシア",
       "form_id": "0",
       "rank": 3,
-      "move_name": "ミラーコート",
+      "move_name": "Unknown_914",
       "usage_rate": "100.0"
     },
     {
@@ -4366,7 +4366,7 @@
       "pokemon_name": "ダイノーズ",
       "form_id": "0",
       "rank": 1,
-      "move_name": "でんじは",
+      "move_name": "ボディプレス",
       "usage_rate": "100.0"
     },
     {
@@ -4382,7 +4382,7 @@
       "pokemon_name": "ダイノーズ",
       "form_id": "0",
       "rank": 3,
-      "move_name": "ボディプレス",
+      "move_name": "でんじは",
       "usage_rate": "100.0"
     },
     {
@@ -4406,14 +4406,6 @@
       "pokemon_name": "ロトム",
       "form_id": "1",
       "rank": 2,
-      "move_name": "いたみわけ",
-      "usage_rate": "100.0"
-    },
-    {
-      "pokemon_id": "479",
-      "pokemon_name": "ロトム",
-      "form_id": "1",
-      "rank": 3,
       "move_name": "イカサマ",
       "usage_rate": "100.0"
     },
@@ -4421,8 +4413,16 @@
       "pokemon_id": "479",
       "pokemon_name": "ロトム",
       "form_id": "1",
-      "rank": 4,
+      "rank": 3,
       "move_name": "おにび",
+      "usage_rate": "100.0"
+    },
+    {
+      "pokemon_id": "479",
+      "pokemon_name": "ロトム",
+      "form_id": "1",
+      "rank": 4,
+      "move_name": "いたみわけ",
       "usage_rate": "100.0"
     },
     {
@@ -4462,7 +4462,7 @@
       "pokemon_name": "ロトム",
       "form_id": "2",
       "rank": 5,
-      "move_name": "ほうでん",
+      "move_name": "ボルトチェンジ",
       "usage_rate": "5.3"
     },
     {
@@ -4470,7 +4470,7 @@
       "pokemon_name": "ロトム",
       "form_id": "2",
       "rank": 6,
-      "move_name": "ボルトチェンジ",
+      "move_name": "ほうでん",
       "usage_rate": "5.3"
     },
     {
@@ -4518,7 +4518,7 @@
       "pokemon_name": "ディアルガ",
       "form_id": "0",
       "rank": 2,
-      "move_name": "メタルバースト",
+      "move_name": "てっていこうせん",
       "usage_rate": "83.3"
     },
     {
@@ -4526,7 +4526,7 @@
       "pokemon_name": "ディアルガ",
       "form_id": "0",
       "rank": 3,
-      "move_name": "てっていこうせん",
+      "move_name": "メタルバースト",
       "usage_rate": "83.3"
     },
     {
@@ -4582,7 +4582,7 @@
       "pokemon_name": "ディアルガ",
       "form_id": "1",
       "rank": 2,
-      "move_name": "トリックルーム",
+      "move_name": "かえんほうしゃ",
       "usage_rate": "66.7"
     },
     {
@@ -4590,7 +4590,7 @@
       "pokemon_name": "ディアルガ",
       "form_id": "1",
       "rank": 3,
-      "move_name": "かえんほうしゃ",
+      "move_name": "トリックルーム",
       "usage_rate": "66.7"
     },
     {
@@ -4638,7 +4638,7 @@
       "pokemon_name": "パルキア",
       "form_id": "0",
       "rank": 2,
-      "move_name": "１０まんボルト",
+      "move_name": "トリックルーム",
       "usage_rate": "100.0"
     },
     {
@@ -4646,7 +4646,7 @@
       "pokemon_name": "パルキア",
       "form_id": "0",
       "rank": 3,
-      "move_name": "トリックルーム",
+      "move_name": "１０まんボルト",
       "usage_rate": "100.0"
     },
     {
@@ -4750,7 +4750,7 @@
       "pokemon_name": "ギラティナ",
       "form_id": "0",
       "rank": 1,
-      "move_name": "おにび",
+      "move_name": "でんじは",
       "usage_rate": "100.0"
     },
     {
@@ -4774,7 +4774,7 @@
       "pokemon_name": "ギラティナ",
       "form_id": "0",
       "rank": 4,
-      "move_name": "でんじは",
+      "move_name": "おにび",
       "usage_rate": "100.0"
     },
     {
@@ -4790,7 +4790,7 @@
       "pokemon_name": "ギラティナ",
       "form_id": "1",
       "rank": 2,
-      "move_name": "たたりめ",
+      "move_name": "りゅうせいぐん",
       "usage_rate": "100.0"
     },
     {
@@ -4798,7 +4798,7 @@
       "pokemon_name": "ギラティナ",
       "form_id": "1",
       "rank": 3,
-      "move_name": "りゅうせいぐん",
+      "move_name": "たたりめ",
       "usage_rate": "100.0"
     },
     {
@@ -4918,14 +4918,6 @@
       "pokemon_name": "ダイケンキ",
       "form_id": "1",
       "rank": 2,
-      "move_name": "ひけん・ちえなみ",
-      "usage_rate": "100.0"
-    },
-    {
-      "pokemon_id": "503",
-      "pokemon_name": "ダイケンキ",
-      "form_id": "1",
-      "rank": 3,
       "move_name": "ふいうち",
       "usage_rate": "100.0"
     },
@@ -4933,8 +4925,16 @@
       "pokemon_id": "503",
       "pokemon_name": "ダイケンキ",
       "form_id": "1",
-      "rank": 4,
+      "rank": 3,
       "move_name": "シェルブレード",
+      "usage_rate": "100.0"
+    },
+    {
+      "pokemon_id": "503",
+      "pokemon_name": "ダイケンキ",
+      "form_id": "1",
+      "rank": 4,
+      "move_name": "ひけん・ちえなみ",
       "usage_rate": "100.0"
     },
     {
@@ -4942,14 +4942,6 @@
       "pokemon_name": "ドリュウズ",
       "form_id": "0",
       "rank": 1,
-      "move_name": "つるぎのまい",
-      "usage_rate": "100.0"
-    },
-    {
-      "pokemon_id": "530",
-      "pokemon_name": "ドリュウズ",
-      "form_id": "0",
-      "rank": 2,
       "move_name": "じしん",
       "usage_rate": "100.0"
     },
@@ -4957,8 +4949,16 @@
       "pokemon_id": "530",
       "pokemon_name": "ドリュウズ",
       "form_id": "0",
-      "rank": 3,
+      "rank": 2,
       "move_name": "アイアンヘッド",
+      "usage_rate": "100.0"
+    },
+    {
+      "pokemon_id": "530",
+      "pokemon_name": "ドリュウズ",
+      "form_id": "0",
+      "rank": 3,
+      "move_name": "つるぎのまい",
       "usage_rate": "100.0"
     },
     {
@@ -5070,7 +5070,7 @@
       "pokemon_name": "エルフーン",
       "form_id": "0",
       "rank": 7,
-      "move_name": "グラスフィールド",
+      "move_name": "とんぼがえり",
       "usage_rate": "22.2"
     },
     {
@@ -5078,7 +5078,7 @@
       "pokemon_name": "エルフーン",
       "form_id": "0",
       "rank": 8,
-      "move_name": "とんぼがえり",
+      "move_name": "グラスフィールド",
       "usage_rate": "22.2"
     },
     {
@@ -5134,7 +5134,7 @@
       "pokemon_name": "ゾロアーク",
       "form_id": "1",
       "rank": 1,
-      "move_name": "おにび",
+      "move_name": "トリック",
       "usage_rate": "100.0"
     },
     {
@@ -5142,7 +5142,7 @@
       "pokemon_name": "ゾロアーク",
       "form_id": "1",
       "rank": 2,
-      "move_name": "トリック",
+      "move_name": "おにび",
       "usage_rate": "100.0"
     },
     {
@@ -5246,7 +5246,7 @@
       "pokemon_name": "ランクルス",
       "form_id": "0",
       "rank": 1,
-      "move_name": "とける",
+      "move_name": "めいそう",
       "usage_rate": "100.0"
     },
     {
@@ -5262,7 +5262,7 @@
       "pokemon_name": "ランクルス",
       "form_id": "0",
       "rank": 3,
-      "move_name": "めいそう",
+      "move_name": "とける",
       "usage_rate": "100.0"
     },
     {
@@ -5286,7 +5286,7 @@
       "pokemon_name": "モロバレル",
       "form_id": "0",
       "rank": 2,
-      "move_name": "リーフストーム",
+      "move_name": "キノコのほうし",
       "usage_rate": "80.0"
     },
     {
@@ -5294,7 +5294,7 @@
       "pokemon_name": "モロバレル",
       "form_id": "0",
       "rank": 3,
-      "move_name": "キノコのほうし",
+      "move_name": "リーフストーム",
       "usage_rate": "80.0"
     },
     {
@@ -5470,7 +5470,7 @@
       "pokemon_name": "シャンデラ",
       "form_id": "0",
       "rank": 1,
-      "move_name": "たたりめ",
+      "move_name": "のろい",
       "usage_rate": "66.7"
     },
     {
@@ -5478,7 +5478,7 @@
       "pokemon_name": "シャンデラ",
       "form_id": "0",
       "rank": 2,
-      "move_name": "のろい",
+      "move_name": "たたりめ",
       "usage_rate": "66.7"
     },
     {
@@ -5518,7 +5518,7 @@
       "pokemon_name": "シャンデラ",
       "form_id": "0",
       "rank": 7,
-      "move_name": "シャドーボール",
+      "move_name": "オーバーヒート",
       "usage_rate": "33.3"
     },
     {
@@ -5526,7 +5526,7 @@
       "pokemon_name": "シャンデラ",
       "form_id": "0",
       "rank": 8,
-      "move_name": "オーバーヒート",
+      "move_name": "シャドーボール",
       "usage_rate": "33.3"
     },
     {
@@ -5534,7 +5534,7 @@
       "pokemon_name": "バルジーナ",
       "form_id": "0",
       "rank": 1,
-      "move_name": "どくどく",
+      "move_name": "はねやすめ",
       "usage_rate": "100.0"
     },
     {
@@ -5542,7 +5542,7 @@
       "pokemon_name": "バルジーナ",
       "form_id": "0",
       "rank": 2,
-      "move_name": "はねやすめ",
+      "move_name": "どくどく",
       "usage_rate": "100.0"
     },
     {
@@ -5598,7 +5598,7 @@
       "pokemon_name": "サザンドラ",
       "form_id": "0",
       "rank": 5,
-      "move_name": "みがわり",
+      "move_name": "ほのおのうず",
       "usage_rate": "21.1"
     },
     {
@@ -5606,7 +5606,7 @@
       "pokemon_name": "サザンドラ",
       "form_id": "0",
       "rank": 6,
-      "move_name": "ちょうはつ",
+      "move_name": "みがわり",
       "usage_rate": "21.1"
     },
     {
@@ -5614,7 +5614,7 @@
       "pokemon_name": "サザンドラ",
       "form_id": "0",
       "rank": 7,
-      "move_name": "ほのおのうず",
+      "move_name": "ちょうはつ",
       "usage_rate": "21.1"
     },
     {
@@ -5622,7 +5622,7 @@
       "pokemon_name": "ウルガモス",
       "form_id": "0",
       "rank": 1,
-      "move_name": "むしのさざめき",
+      "move_name": "ちょうのまい",
       "usage_rate": "100.0"
     },
     {
@@ -5638,7 +5638,7 @@
       "pokemon_name": "ウルガモス",
       "form_id": "0",
       "rank": 3,
-      "move_name": "ちょうのまい",
+      "move_name": "むしのさざめき",
       "usage_rate": "100.0"
     },
     {
@@ -5766,7 +5766,7 @@
       "pokemon_name": "ランドロス",
       "form_id": "0",
       "rank": 2,
-      "move_name": "くさむすび",
+      "move_name": "いわなだれ",
       "usage_rate": "100.0"
     },
     {
@@ -5782,7 +5782,7 @@
       "pokemon_name": "ランドロス",
       "form_id": "0",
       "rank": 4,
-      "move_name": "いわなだれ",
+      "move_name": "くさむすび",
       "usage_rate": "100.0"
     },
     {
@@ -5958,14 +5958,6 @@
       "pokemon_name": "マフォクシー",
       "form_id": "0",
       "rank": 1,
-      "move_name": "サイコキネシス",
-      "usage_rate": "100.0"
-    },
-    {
-      "pokemon_id": "655",
-      "pokemon_name": "マフォクシー",
-      "form_id": "0",
-      "rank": 2,
       "move_name": "こらえる",
       "usage_rate": "100.0"
     },
@@ -5973,8 +5965,16 @@
       "pokemon_id": "655",
       "pokemon_name": "マフォクシー",
       "form_id": "0",
-      "rank": 3,
+      "rank": 2,
       "move_name": "ブラストバーン",
+      "usage_rate": "100.0"
+    },
+    {
+      "pokemon_id": "655",
+      "pokemon_name": "マフォクシー",
+      "form_id": "0",
+      "rank": 3,
+      "move_name": "サイコキネシス",
       "usage_rate": "100.0"
     },
     {
@@ -6030,7 +6030,7 @@
       "pokemon_name": "ゲッコウガ",
       "form_id": "0",
       "rank": 6,
-      "move_name": "あくのはどう",
+      "move_name": "れいとうビーム",
       "usage_rate": "42.9"
     },
     {
@@ -6038,7 +6038,7 @@
       "pokemon_name": "ゲッコウガ",
       "form_id": "0",
       "rank": 7,
-      "move_name": "れいとうビーム",
+      "move_name": "あくのはどう",
       "usage_rate": "42.9"
     },
     {
@@ -6054,7 +6054,7 @@
       "pokemon_name": "ビビヨン",
       "form_id": "18",
       "rank": 2,
-      "move_name": "ねむりごな",
+      "move_name": "ちょうのまい",
       "usage_rate": "100.0"
     },
     {
@@ -6062,7 +6062,7 @@
       "pokemon_name": "ビビヨン",
       "form_id": "18",
       "rank": 3,
-      "move_name": "ちょうのまい",
+      "move_name": "ねむりごな",
       "usage_rate": "100.0"
     },
     {
@@ -6126,7 +6126,7 @@
       "pokemon_name": "ルチャブル",
       "form_id": "0",
       "rank": 1,
-      "move_name": "つるぎのまい",
+      "move_name": "アクロバット",
       "usage_rate": "100.0"
     },
     {
@@ -6134,7 +6134,7 @@
       "pokemon_name": "ルチャブル",
       "form_id": "0",
       "rank": 2,
-      "move_name": "アクロバット",
+      "move_name": "つるぎのまい",
       "usage_rate": "100.0"
     },
     {
@@ -6182,14 +6182,6 @@
       "pokemon_name": "デデンネ",
       "form_id": "0",
       "rank": 2,
-      "move_name": "なかまづくり",
-      "usage_rate": "100.0"
-    },
-    {
-      "pokemon_id": "702",
-      "pokemon_name": "デデンネ",
-      "form_id": "0",
-      "rank": 3,
       "move_name": "かみなり",
       "usage_rate": "100.0"
     },
@@ -6197,8 +6189,16 @@
       "pokemon_id": "702",
       "pokemon_name": "デデンネ",
       "form_id": "0",
-      "rank": 4,
+      "rank": 3,
       "move_name": "じゃれつく",
+      "usage_rate": "100.0"
+    },
+    {
+      "pokemon_id": "702",
+      "pokemon_name": "デデンネ",
+      "form_id": "0",
+      "rank": 4,
+      "move_name": "なかまづくり",
       "usage_rate": "100.0"
     },
     {
@@ -6214,7 +6214,7 @@
       "pokemon_name": "メレシー",
       "form_id": "0",
       "rank": 2,
-      "move_name": "がむしゃら",
+      "move_name": "ミストバースト",
       "usage_rate": "100.0"
     },
     {
@@ -6222,7 +6222,7 @@
       "pokemon_name": "メレシー",
       "form_id": "0",
       "rank": 3,
-      "move_name": "ミストバースト",
+      "move_name": "がむしゃら",
       "usage_rate": "100.0"
     },
     {
@@ -6238,7 +6238,7 @@
       "pokemon_name": "ヌメルゴン",
       "form_id": "0",
       "rank": 1,
-      "move_name": "りゅうのはどう",
+      "move_name": "フェイント",
       "usage_rate": "100.0"
     },
     {
@@ -6246,7 +6246,7 @@
       "pokemon_name": "ヌメルゴン",
       "form_id": "0",
       "rank": 2,
-      "move_name": "フェイント",
+      "move_name": "りゅうのはどう",
       "usage_rate": "100.0"
     },
     {
@@ -6270,14 +6270,6 @@
       "pokemon_name": "ヌメルゴン",
       "form_id": "1",
       "rank": 1,
-      "move_name": "りゅうのはどう",
-      "usage_rate": "75.0"
-    },
-    {
-      "pokemon_id": "706",
-      "pokemon_name": "ヌメルゴン",
-      "form_id": "1",
-      "rank": 2,
       "move_name": "ラスターカノン",
       "usage_rate": "75.0"
     },
@@ -6285,8 +6277,16 @@
       "pokemon_id": "706",
       "pokemon_name": "ヌメルゴン",
       "form_id": "1",
+      "rank": 2,
+      "move_name": "りゅうのはどう",
+      "usage_rate": "75.0"
+    },
+    {
+      "pokemon_id": "706",
+      "pokemon_name": "ヌメルゴン",
+      "form_id": "1",
       "rank": 3,
-      "move_name": "だくりゅう",
+      "move_name": "１０まんボルト",
       "usage_rate": "75.0"
     },
     {
@@ -6294,7 +6294,7 @@
       "pokemon_name": "ヌメルゴン",
       "form_id": "1",
       "rank": 4,
-      "move_name": "１０まんボルト",
+      "move_name": "だくりゅう",
       "usage_rate": "75.0"
     },
     {
@@ -6390,7 +6390,7 @@
       "pokemon_name": "クレベース",
       "form_id": "1",
       "rank": 1,
-      "move_name": "つららばり",
+      "move_name": "ミラーコート",
       "usage_rate": "83.3"
     },
     {
@@ -6398,7 +6398,7 @@
       "pokemon_name": "クレベース",
       "form_id": "1",
       "rank": 2,
-      "move_name": "ロックブラスト",
+      "move_name": "つららばり",
       "usage_rate": "83.3"
     },
     {
@@ -6406,7 +6406,7 @@
       "pokemon_name": "クレベース",
       "form_id": "1",
       "rank": 3,
-      "move_name": "ミラーコート",
+      "move_name": "ロックブラスト",
       "usage_rate": "83.3"
     },
     {
@@ -6422,7 +6422,7 @@
       "pokemon_name": "クレベース",
       "form_id": "1",
       "rank": 5,
-      "move_name": "かみくだく",
+      "move_name": "のろい",
       "usage_rate": "16.7"
     },
     {
@@ -6430,7 +6430,7 @@
       "pokemon_name": "クレベース",
       "form_id": "1",
       "rank": 6,
-      "move_name": "じこさいせい",
+      "move_name": "かみくだく",
       "usage_rate": "16.7"
     },
     {
@@ -6438,7 +6438,7 @@
       "pokemon_name": "クレベース",
       "form_id": "1",
       "rank": 7,
-      "move_name": "のろい",
+      "move_name": "じこさいせい",
       "usage_rate": "16.7"
     },
     {
@@ -6454,14 +6454,6 @@
       "pokemon_name": "ジュナイパー",
       "form_id": "1",
       "rank": 1,
-      "move_name": "リーフブレード",
-      "usage_rate": "100.0"
-    },
-    {
-      "pokemon_id": "724",
-      "pokemon_name": "ジュナイパー",
-      "form_id": "1",
-      "rank": 2,
       "move_name": "ふいうち",
       "usage_rate": "100.0"
     },
@@ -6469,8 +6461,16 @@
       "pokemon_id": "724",
       "pokemon_name": "ジュナイパー",
       "form_id": "1",
-      "rank": 3,
+      "rank": 2,
       "move_name": "テラバースト",
+      "usage_rate": "100.0"
+    },
+    {
+      "pokemon_id": "724",
+      "pokemon_name": "ジュナイパー",
+      "form_id": "1",
+      "rank": 3,
+      "move_name": "リーフブレード",
       "usage_rate": "100.0"
     },
     {
@@ -6542,14 +6542,6 @@
       "pokemon_name": "ガオガエン",
       "form_id": "0",
       "rank": 8,
-      "move_name": "かわらわり",
-      "usage_rate": "5.7"
-    },
-    {
-      "pokemon_id": "727",
-      "pokemon_name": "ガオガエン",
-      "form_id": "0",
-      "rank": 9,
       "move_name": "おにび",
       "usage_rate": "5.7"
     },
@@ -6557,8 +6549,16 @@
       "pokemon_id": "727",
       "pokemon_name": "ガオガエン",
       "form_id": "0",
-      "rank": 10,
+      "rank": 9,
       "move_name": "テラバースト",
+      "usage_rate": "5.7"
+    },
+    {
+      "pokemon_id": "727",
+      "pokemon_name": "ガオガエン",
+      "form_id": "0",
+      "rank": 10,
+      "move_name": "かわらわり",
       "usage_rate": "5.7"
     },
     {
@@ -6622,7 +6622,7 @@
       "pokemon_name": "アシレーヌ",
       "form_id": "0",
       "rank": 8,
-      "move_name": "つぶらなひとみ",
+      "move_name": "ほろびのうた",
       "usage_rate": "2.1"
     },
     {
@@ -6630,7 +6630,7 @@
       "pokemon_name": "アシレーヌ",
       "form_id": "0",
       "rank": 9,
-      "move_name": "ほろびのうた",
+      "move_name": "つぶらなひとみ",
       "usage_rate": "2.1"
     },
     {
@@ -6662,7 +6662,7 @@
       "pokemon_name": "デンヂムシ",
       "form_id": "0",
       "rank": 3,
-      "move_name": "でんじは",
+      "move_name": "マッドショット",
       "usage_rate": "100.0"
     },
     {
@@ -6670,7 +6670,7 @@
       "pokemon_name": "デンヂムシ",
       "form_id": "0",
       "rank": 4,
-      "move_name": "マッドショット",
+      "move_name": "でんじは",
       "usage_rate": "100.0"
     },
     {
@@ -6814,7 +6814,7 @@
       "pokemon_name": "バンバドロ",
       "form_id": "0",
       "rank": 1,
-      "move_name": "まもる",
+      "move_name": "ストーンエッジ",
       "usage_rate": "100.0"
     },
     {
@@ -6822,7 +6822,7 @@
       "pokemon_name": "バンバドロ",
       "form_id": "0",
       "rank": 2,
-      "move_name": "ボディプレス",
+      "move_name": "まもる",
       "usage_rate": "100.0"
     },
     {
@@ -6830,7 +6830,7 @@
       "pokemon_name": "バンバドロ",
       "form_id": "0",
       "rank": 3,
-      "move_name": "ストーンエッジ",
+      "move_name": "ボディプレス",
       "usage_rate": "100.0"
     },
     {
@@ -6854,14 +6854,6 @@
       "pokemon_name": "オニシズクモ",
       "form_id": "0",
       "rank": 2,
-      "move_name": "こらえる",
-      "usage_rate": "100.0"
-    },
-    {
-      "pokemon_id": "752",
-      "pokemon_name": "オニシズクモ",
-      "form_id": "0",
-      "rank": 3,
       "move_name": "ねばねばネット",
       "usage_rate": "100.0"
     },
@@ -6869,8 +6861,16 @@
       "pokemon_id": "752",
       "pokemon_name": "オニシズクモ",
       "form_id": "0",
-      "rank": 4,
+      "rank": 3,
       "move_name": "がむしゃら",
+      "usage_rate": "100.0"
+    },
+    {
+      "pokemon_id": "752",
+      "pokemon_name": "オニシズクモ",
+      "form_id": "0",
+      "rank": 4,
+      "move_name": "こらえる",
       "usage_rate": "100.0"
     },
     {
@@ -6950,7 +6950,7 @@
       "pokemon_name": "メテノ",
       "form_id": "7",
       "rank": 1,
-      "move_name": "じしん",
+      "move_name": "ロックブラスト",
       "usage_rate": "100.0"
     },
     {
@@ -6958,7 +6958,7 @@
       "pokemon_name": "メテノ",
       "form_id": "7",
       "rank": 2,
-      "move_name": "ロックブラスト",
+      "move_name": "じしん",
       "usage_rate": "100.0"
     },
     {
@@ -6990,7 +6990,7 @@
       "pokemon_name": "ネッコアラ",
       "form_id": "0",
       "rank": 2,
-      "move_name": "ばかぢから",
+      "move_name": "こうそくスピン",
       "usage_rate": "100.0"
     },
     {
@@ -6998,7 +6998,7 @@
       "pokemon_name": "ネッコアラ",
       "form_id": "0",
       "rank": 3,
-      "move_name": "ふいうち",
+      "move_name": "ばかぢから",
       "usage_rate": "100.0"
     },
     {
@@ -7006,7 +7006,7 @@
       "pokemon_name": "ネッコアラ",
       "form_id": "0",
       "rank": 4,
-      "move_name": "こうそくスピン",
+      "move_name": "ふいうち",
       "usage_rate": "100.0"
     },
     {
@@ -7118,7 +7118,7 @@
       "pokemon_name": "ソルガレオ",
       "form_id": "0",
       "rank": 4,
-      "move_name": "ストーンエッジ",
+      "move_name": "ワイドガード",
       "usage_rate": "50.0"
     },
     {
@@ -7126,7 +7126,7 @@
       "pokemon_name": "ソルガレオ",
       "form_id": "0",
       "rank": 5,
-      "move_name": "はたきおとす",
+      "move_name": "ストーンエッジ",
       "usage_rate": "50.0"
     },
     {
@@ -7134,7 +7134,7 @@
       "pokemon_name": "ソルガレオ",
       "form_id": "0",
       "rank": 6,
-      "move_name": "ワイドガード",
+      "move_name": "はたきおとす",
       "usage_rate": "50.0"
     },
     {
@@ -7334,14 +7334,6 @@
       "pokemon_name": "ネクロズマ",
       "form_id": "2",
       "rank": 5,
-      "move_name": "ねっぷう",
-      "usage_rate": "40.0"
-    },
-    {
-      "pokemon_id": "800",
-      "pokemon_name": "ネクロズマ",
-      "form_id": "2",
-      "rank": 6,
       "move_name": "プリズムレーザー",
       "usage_rate": "40.0"
     },
@@ -7349,8 +7341,16 @@
       "pokemon_id": "800",
       "pokemon_name": "ネクロズマ",
       "form_id": "2",
+      "rank": 6,
+      "move_name": "ねっぷう",
+      "usage_rate": "40.0"
+    },
+    {
+      "pokemon_id": "800",
+      "pokemon_name": "ネクロズマ",
+      "form_id": "2",
       "rank": 7,
-      "move_name": "りゅうのまい",
+      "move_name": "かわらわり",
       "usage_rate": "20.0"
     },
     {
@@ -7358,7 +7358,7 @@
       "pokemon_name": "ネクロズマ",
       "form_id": "2",
       "rank": 8,
-      "move_name": "かわらわり",
+      "move_name": "りゅうのまい",
       "usage_rate": "20.0"
     },
     {
@@ -7438,7 +7438,7 @@
       "pokemon_name": "ラビフット",
       "form_id": "0",
       "rank": 1,
-      "move_name": "とんぼがえり",
+      "move_name": "カウンター",
       "usage_rate": "100.0"
     },
     {
@@ -7446,7 +7446,7 @@
       "pokemon_name": "ラビフット",
       "form_id": "0",
       "rank": 2,
-      "move_name": "カウンター",
+      "move_name": "とんぼがえり",
       "usage_rate": "100.0"
     },
     {
@@ -7470,7 +7470,7 @@
       "pokemon_name": "インテレオン",
       "form_id": "0",
       "rank": 1,
-      "move_name": "ねらいうち",
+      "move_name": "リフレクター",
       "usage_rate": "100.0"
     },
     {
@@ -7478,7 +7478,7 @@
       "pokemon_name": "インテレオン",
       "form_id": "0",
       "rank": 2,
-      "move_name": "リフレクター",
+      "move_name": "ねらいうち",
       "usage_rate": "100.0"
     },
     {
@@ -7502,7 +7502,7 @@
       "pokemon_name": "ヨクバリス",
       "form_id": "0",
       "rank": 1,
-      "move_name": "のろい",
+      "move_name": "ボディプレス",
       "usage_rate": "100.0"
     },
     {
@@ -7518,7 +7518,7 @@
       "pokemon_name": "ヨクバリス",
       "form_id": "0",
       "rank": 3,
-      "move_name": "ボディプレス",
+      "move_name": "のろい",
       "usage_rate": "100.0"
     },
     {
@@ -7614,14 +7614,6 @@
       "pokemon_name": "サダイジャ",
       "form_id": "0",
       "rank": 2,
-      "move_name": "じしん",
-      "usage_rate": "100.0"
-    },
-    {
-      "pokemon_id": "844",
-      "pokemon_name": "サダイジャ",
-      "form_id": "0",
-      "rank": 3,
       "move_name": "がむしゃら",
       "usage_rate": "100.0"
     },
@@ -7629,8 +7621,16 @@
       "pokemon_id": "844",
       "pokemon_name": "サダイジャ",
       "form_id": "0",
-      "rank": 4,
+      "rank": 3,
       "move_name": "ステルスロック",
+      "usage_rate": "100.0"
+    },
+    {
+      "pokemon_id": "844",
+      "pokemon_name": "サダイジャ",
+      "form_id": "0",
+      "rank": 4,
+      "move_name": "じしん",
       "usage_rate": "100.0"
     },
     {
@@ -7646,7 +7646,7 @@
       "pokemon_name": "ウッウ",
       "form_id": "0",
       "rank": 2,
-      "move_name": "がむしゃら",
+      "move_name": "なみのり",
       "usage_rate": "100.0"
     },
     {
@@ -7654,7 +7654,7 @@
       "pokemon_name": "ウッウ",
       "form_id": "0",
       "rank": 3,
-      "move_name": "なみのり",
+      "move_name": "がむしゃら",
       "usage_rate": "100.0"
     },
     {
@@ -7758,7 +7758,7 @@
       "pokemon_name": "ブリムオン",
       "form_id": "0",
       "rank": 7,
-      "move_name": "トリック",
+      "move_name": "サイコフィールド",
       "usage_rate": "21.6"
     },
     {
@@ -7766,7 +7766,7 @@
       "pokemon_name": "ブリムオン",
       "form_id": "0",
       "rank": 8,
-      "move_name": "サイコフィールド",
+      "move_name": "トリック",
       "usage_rate": "21.6"
     },
     {
@@ -7862,7 +7862,7 @@
       "pokemon_name": "イエッサン",
       "form_id": "0",
       "rank": 1,
-      "move_name": "いやしのねがい",
+      "move_name": "ワイドフォース",
       "usage_rate": "100.0"
     },
     {
@@ -7870,7 +7870,7 @@
       "pokemon_name": "イエッサン",
       "form_id": "0",
       "rank": 2,
-      "move_name": "ワイドフォース",
+      "move_name": "いやしのねがい",
       "usage_rate": "100.0"
     },
     {
@@ -7974,7 +7974,7 @@
       "pokemon_name": "ドラパルト",
       "form_id": "0",
       "rank": 9,
-      "move_name": "ゴーストダイブ",
+      "move_name": "げきりん",
       "usage_rate": "5.3"
     },
     {
@@ -7982,7 +7982,7 @@
       "pokemon_name": "ドラパルト",
       "form_id": "0",
       "rank": 10,
-      "move_name": "げきりん",
+      "move_name": "ゴーストダイブ",
       "usage_rate": "5.3"
     },
     {
@@ -8454,7 +8454,7 @@
       "pokemon_name": "レジドラゴ",
       "form_id": "0",
       "rank": 3,
-      "move_name": "だいちのちから",
+      "move_name": "ドラゴンエナジー",
       "usage_rate": "100.0"
     },
     {
@@ -8462,7 +8462,7 @@
       "pokemon_name": "レジドラゴ",
       "form_id": "0",
       "rank": 4,
-      "move_name": "ドラゴンエナジー",
+      "move_name": "だいちのちから",
       "usage_rate": "100.0"
     },
     {
@@ -8630,7 +8630,7 @@
       "pokemon_name": "バサギリ",
       "form_id": "0",
       "rank": 1,
-      "move_name": "がんせきアックス",
+      "move_name": "シザークロス",
       "usage_rate": "100.0"
     },
     {
@@ -8638,7 +8638,7 @@
       "pokemon_name": "バサギリ",
       "form_id": "0",
       "rank": 2,
-      "move_name": "シザークロス",
+      "move_name": "がんせきアックス",
       "usage_rate": "100.0"
     },
     {
@@ -8854,7 +8854,7 @@
       "pokemon_name": "イダイトウ",
       "form_id": "0",
       "rank": 2,
-      "move_name": "ウェーブタックル",
+      "move_name": "おはかまいり",
       "usage_rate": "100.0"
     },
     {
@@ -8862,7 +8862,7 @@
       "pokemon_name": "イダイトウ",
       "form_id": "0",
       "rank": 3,
-      "move_name": "おはかまいり",
+      "move_name": "ウェーブタックル",
       "usage_rate": "100.0"
     },
     {
@@ -9062,14 +9062,6 @@
       "pokemon_name": "ラブトロス",
       "form_id": "0",
       "rank": 3,
-      "move_name": "ばかぢから",
-      "usage_rate": "71.4"
-    },
-    {
-      "pokemon_id": "905",
-      "pokemon_name": "ラブトロス",
-      "form_id": "0",
-      "rank": 4,
       "move_name": "Unknown_914",
       "usage_rate": "71.4"
     },
@@ -9077,8 +9069,16 @@
       "pokemon_id": "905",
       "pokemon_name": "ラブトロス",
       "form_id": "0",
+      "rank": 4,
+      "move_name": "ばかぢから",
+      "usage_rate": "71.4"
+    },
+    {
+      "pokemon_id": "905",
+      "pokemon_name": "ラブトロス",
+      "form_id": "0",
       "rank": 5,
-      "move_name": "ちょうはつ",
+      "move_name": "じんつうりき",
       "usage_rate": "14.3"
     },
     {
@@ -9086,7 +9086,7 @@
       "pokemon_name": "ラブトロス",
       "form_id": "0",
       "rank": 6,
-      "move_name": "ムーンフォース",
+      "move_name": "さわぐ",
       "usage_rate": "14.3"
     },
     {
@@ -9094,7 +9094,7 @@
       "pokemon_name": "ラブトロス",
       "form_id": "0",
       "rank": 7,
-      "move_name": "おいかぜ",
+      "move_name": "ムーンフォース",
       "usage_rate": "14.3"
     },
     {
@@ -9110,7 +9110,7 @@
       "pokemon_name": "ラブトロス",
       "form_id": "0",
       "rank": 9,
-      "move_name": "さわぐ",
+      "move_name": "おいかぜ",
       "usage_rate": "14.3"
     },
     {
@@ -9118,7 +9118,7 @@
       "pokemon_name": "ラブトロス",
       "form_id": "0",
       "rank": 10,
-      "move_name": "じんつうりき",
+      "move_name": "ちょうはつ",
       "usage_rate": "14.3"
     },
     {
@@ -9302,7 +9302,7 @@
       "pokemon_name": "ラウドボーン",
       "form_id": "0",
       "rank": 9,
-      "move_name": "Unknown_914",
+      "move_name": "だいちのちから",
       "usage_rate": "2.6"
     },
     {
@@ -9310,7 +9310,7 @@
       "pokemon_name": "ラウドボーン",
       "form_id": "0",
       "rank": 10,
-      "move_name": "だいちのちから",
+      "move_name": "Unknown_914",
       "usage_rate": "2.6"
     },
     {
@@ -9342,7 +9342,7 @@
       "pokemon_name": "パーモット",
       "form_id": "0",
       "rank": 4,
-      "move_name": "ボルトチェンジ",
+      "move_name": "ねこだまし",
       "usage_rate": "43.5"
     },
     {
@@ -9350,7 +9350,7 @@
       "pokemon_name": "パーモット",
       "form_id": "0",
       "rank": 5,
-      "move_name": "ねこだまし",
+      "move_name": "ボルトチェンジ",
       "usage_rate": "43.5"
     },
     {
@@ -9390,7 +9390,7 @@
       "pokemon_name": "パーモット",
       "form_id": "0",
       "rank": 10,
-      "move_name": "さいきのいのり",
+      "move_name": "いかりのまえば",
       "usage_rate": "8.7"
     },
     {
@@ -9446,7 +9446,7 @@
       "pokemon_name": "オリーヴァ",
       "form_id": "0",
       "rank": 2,
-      "move_name": "だいちのちから",
+      "move_name": "ミラーコート",
       "usage_rate": "68.6"
     },
     {
@@ -9454,7 +9454,7 @@
       "pokemon_name": "オリーヴァ",
       "form_id": "0",
       "rank": 3,
-      "move_name": "ミラーコート",
+      "move_name": "だいちのちから",
       "usage_rate": "68.6"
     },
     {
@@ -9670,7 +9670,7 @@
       "pokemon_name": "ハラバリー",
       "form_id": "0",
       "rank": 3,
-      "move_name": "ボルトチェンジ",
+      "move_name": "どくどく",
       "usage_rate": "100.0"
     },
     {
@@ -9678,7 +9678,7 @@
       "pokemon_name": "ハラバリー",
       "form_id": "0",
       "rank": 4,
-      "move_name": "どくどく",
+      "move_name": "ボルトチェンジ",
       "usage_rate": "100.0"
     },
     {
@@ -9702,7 +9702,7 @@
       "pokemon_name": "スコヴィラン",
       "form_id": "0",
       "rank": 3,
-      "move_name": "かえんほうしゃ",
+      "move_name": "みがわり",
       "usage_rate": "100.0"
     },
     {
@@ -9710,7 +9710,7 @@
       "pokemon_name": "スコヴィラン",
       "form_id": "0",
       "rank": 4,
-      "move_name": "みがわり",
+      "move_name": "かえんほうしゃ",
       "usage_rate": "100.0"
     },
     {
@@ -9734,7 +9734,7 @@
       "pokemon_name": "クエスパトラ",
       "form_id": "0",
       "rank": 3,
-      "move_name": "さいみんじゅつ",
+      "move_name": "テラバースト",
       "usage_rate": "94.3"
     },
     {
@@ -9742,7 +9742,7 @@
       "pokemon_name": "クエスパトラ",
       "form_id": "0",
       "rank": 4,
-      "move_name": "テラバースト",
+      "move_name": "さいみんじゅつ",
       "usage_rate": "94.3"
     },
     {
@@ -9766,7 +9766,7 @@
       "pokemon_name": "クエスパトラ",
       "form_id": "0",
       "rank": 7,
-      "move_name": "はねやすめ",
+      "move_name": "めいそう",
       "usage_rate": "2.9"
     },
     {
@@ -9782,7 +9782,7 @@
       "pokemon_name": "クエスパトラ",
       "form_id": "0",
       "rank": 9,
-      "move_name": "めいそう",
+      "move_name": "はねやすめ",
       "usage_rate": "2.9"
     },
     {
@@ -9966,7 +9966,7 @@
       "pokemon_name": "コノヨザル",
       "form_id": "0",
       "rank": 3,
-      "move_name": "ドレインパンチ",
+      "move_name": "ふんどのこぶし",
       "usage_rate": "100.0"
     },
     {
@@ -9974,7 +9974,7 @@
       "pokemon_name": "コノヨザル",
       "form_id": "0",
       "rank": 4,
-      "move_name": "ふんどのこぶし",
+      "move_name": "ドレインパンチ",
       "usage_rate": "100.0"
     },
     {
@@ -10118,14 +10118,6 @@
       "pokemon_name": "リキキリン",
       "form_id": "0",
       "rank": 8,
-      "move_name": "トリック",
-      "usage_rate": "13.8"
-    },
-    {
-      "pokemon_id": "981",
-      "pokemon_name": "リキキリン",
-      "form_id": "0",
-      "rank": 9,
       "move_name": "サイコショック",
       "usage_rate": "13.8"
     },
@@ -10133,8 +10125,16 @@
       "pokemon_id": "981",
       "pokemon_name": "リキキリン",
       "form_id": "0",
+      "rank": 9,
+      "move_name": "トリック",
+      "usage_rate": "13.8"
+    },
+    {
+      "pokemon_id": "981",
+      "pokemon_name": "リキキリン",
+      "form_id": "0",
       "rank": 10,
-      "move_name": "わるだくみ",
+      "move_name": "ツインビーム",
       "usage_rate": "10.3"
     },
     {
@@ -10310,7 +10310,7 @@
       "pokemon_name": "イダイナキバ",
       "form_id": "0",
       "rank": 8,
-      "move_name": "テラバースト",
+      "move_name": "ぶちかまし",
       "usage_rate": "10.0"
     },
     {
@@ -10318,7 +10318,7 @@
       "pokemon_name": "イダイナキバ",
       "form_id": "0",
       "rank": 9,
-      "move_name": "ぶちかまし",
+      "move_name": "テラバースト",
       "usage_rate": "10.0"
     },
     {
@@ -10350,7 +10350,7 @@
       "pokemon_name": "サケブシッポ",
       "form_id": "0",
       "rank": 3,
-      "move_name": "まもる",
+      "move_name": "ステルスロック",
       "usage_rate": "44.4"
     },
     {
@@ -10358,7 +10358,7 @@
       "pokemon_name": "サケブシッポ",
       "form_id": "0",
       "rank": 4,
-      "move_name": "ステルスロック",
+      "move_name": "まもる",
       "usage_rate": "44.4"
     },
     {
@@ -10398,7 +10398,7 @@
       "pokemon_name": "サケブシッポ",
       "form_id": "0",
       "rank": 9,
-      "move_name": "ミストバースト",
+      "move_name": "ほろびのうた",
       "usage_rate": "11.1"
     },
     {
@@ -10406,7 +10406,7 @@
       "pokemon_name": "サケブシッポ",
       "form_id": "0",
       "rank": 10,
-      "move_name": "ほろびのうた",
+      "move_name": "ミストバースト",
       "usage_rate": "11.1"
     },
     {
@@ -10462,7 +10462,7 @@
       "pokemon_name": "アラブルタケ",
       "form_id": "0",
       "rank": 7,
-      "move_name": "くさわけ",
+      "move_name": "クリアスモッグ",
       "usage_rate": "25.0"
     },
     {
@@ -10470,7 +10470,7 @@
       "pokemon_name": "アラブルタケ",
       "form_id": "0",
       "rank": 8,
-      "move_name": "クリアスモッグ",
+      "move_name": "くさわけ",
       "usage_rate": "25.0"
     },
     {
@@ -10774,7 +10774,7 @@
       "pokemon_name": "テツノカイナ",
       "form_id": "0",
       "rank": 8,
-      "move_name": "ワイルドボルト",
+      "move_name": "じゃれつく",
       "usage_rate": "4.9"
     },
     {
@@ -10782,7 +10782,7 @@
       "pokemon_name": "テツノカイナ",
       "form_id": "0",
       "rank": 9,
-      "move_name": "けたぐり",
+      "move_name": "ワイルドボルト",
       "usage_rate": "4.9"
     },
     {
@@ -10790,7 +10790,7 @@
       "pokemon_name": "テツノカイナ",
       "form_id": "0",
       "rank": 10,
-      "move_name": "じゃれつく",
+      "move_name": "けたぐり",
       "usage_rate": "4.9"
     },
     {
@@ -10862,7 +10862,7 @@
       "pokemon_name": "テツノドクガ",
       "form_id": "0",
       "rank": 5,
-      "move_name": "アシッドボム",
+      "move_name": "みがわり",
       "usage_rate": "29.4"
     },
     {
@@ -10870,7 +10870,7 @@
       "pokemon_name": "テツノドクガ",
       "form_id": "0",
       "rank": 6,
-      "move_name": "みがわり",
+      "move_name": "アシッドボム",
       "usage_rate": "29.4"
     },
     {
@@ -10894,7 +10894,7 @@
       "pokemon_name": "テツノドクガ",
       "form_id": "0",
       "rank": 9,
-      "move_name": "ふきとばし",
+      "move_name": "オーバーヒート",
       "usage_rate": "5.9"
     },
     {
@@ -10902,7 +10902,7 @@
       "pokemon_name": "テツノドクガ",
       "form_id": "0",
       "rank": 10,
-      "move_name": "オーバーヒート",
+      "move_name": "ふきとばし",
       "usage_rate": "5.9"
     },
     {
@@ -11126,7 +11126,7 @@
       "pokemon_name": "チオンジェン",
       "form_id": "0",
       "rank": 10,
-      "move_name": "せいちょう",
+      "move_name": "テラバースト",
       "usage_rate": "0.5"
     },
     {
@@ -11478,7 +11478,7 @@
       "pokemon_name": "テツノブジン",
       "form_id": "0",
       "rank": 4,
-      "move_name": "ソウルクラッシュ",
+      "move_name": "はたきおとす",
       "usage_rate": "37.1"
     },
     {
@@ -11486,7 +11486,7 @@
       "pokemon_name": "テツノブジン",
       "form_id": "0",
       "rank": 5,
-      "move_name": "はたきおとす",
+      "move_name": "ソウルクラッシュ",
       "usage_rate": "37.1"
     },
     {
@@ -11766,7 +11766,7 @@
       "pokemon_name": "ピカチュウ",
       "form_id": "0",
       "rank": 10,
-      "move_name": "アクアジェット",
+      "move_name": "ねっとう",
       "usage_rate": "5.6"
     },
     {
@@ -11782,7 +11782,7 @@
       "pokemon_name": "ピカチュウ",
       "form_id": "0",
       "rank": 2,
-      "move_name": "リーフブレード",
+      "move_name": "はたく",
       "usage_rate": "100.0"
     },
     {
@@ -11798,7 +11798,7 @@
       "pokemon_name": "ピカチュウ",
       "form_id": "0",
       "rank": 4,
-      "move_name": "はたく",
+      "move_name": "リーフブレード",
       "usage_rate": "100.0"
     },
     {
@@ -11806,7 +11806,7 @@
       "pokemon_name": "Unknown_1012",
       "form_id": "0",
       "rank": 1,
-      "move_name": "Unknown_902",
+      "move_name": "ねっとう",
       "usage_rate": "100.0"
     },
     {
@@ -11814,7 +11814,7 @@
       "pokemon_name": "Unknown_1012",
       "form_id": "0",
       "rank": 2,
-      "move_name": "シャドーボール",
+      "move_name": "Unknown_902",
       "usage_rate": "100.0"
     },
     {
@@ -11822,7 +11822,7 @@
       "pokemon_name": "Unknown_1012",
       "form_id": "0",
       "rank": 3,
-      "move_name": "ねっとう",
+      "move_name": "シャドーボール",
       "usage_rate": "100.0"
     },
     {
@@ -11902,14 +11902,6 @@
       "pokemon_name": "Unknown_1014",
       "form_id": "0",
       "rank": 5,
-      "move_name": "サイコキネシス",
-      "usage_rate": "43.8"
-    },
-    {
-      "pokemon_id": "1015",
-      "pokemon_name": "Unknown_1014",
-      "form_id": "0",
-      "rank": 6,
       "move_name": "ヘドロばくだん",
       "usage_rate": "43.8"
     },
@@ -11917,8 +11909,16 @@
       "pokemon_id": "1015",
       "pokemon_name": "Unknown_1014",
       "form_id": "0",
+      "rank": 6,
+      "move_name": "サイコキネシス",
+      "usage_rate": "43.8"
+    },
+    {
+      "pokemon_id": "1015",
+      "pokemon_name": "Unknown_1014",
+      "form_id": "0",
       "rank": 7,
-      "move_name": "すてゼリフ",
+      "move_name": "シャドーボール",
       "usage_rate": "43.8"
     },
     {
@@ -11926,7 +11926,7 @@
       "pokemon_name": "Unknown_1014",
       "form_id": "0",
       "rank": 8,
-      "move_name": "シャドーボール",
+      "move_name": "すてゼリフ",
       "usage_rate": "43.8"
     },
     {
@@ -11966,7 +11966,7 @@
       "pokemon_name": "Unknown_1015",
       "form_id": "0",
       "rank": 3,
-      "move_name": "あまえる",
+      "move_name": "めいそう",
       "usage_rate": "61.9"
     },
     {
@@ -11974,7 +11974,7 @@
       "pokemon_name": "Unknown_1015",
       "form_id": "0",
       "rank": 4,
-      "move_name": "めいそう",
+      "move_name": "あまえる",
       "usage_rate": "61.9"
     },
     {
@@ -11990,7 +11990,7 @@
       "pokemon_name": "Unknown_1015",
       "form_id": "0",
       "rank": 6,
-      "move_name": "とんぼがえり",
+      "move_name": "アシッドボム",
       "usage_rate": "33.3"
     },
     {
@@ -11998,7 +11998,7 @@
       "pokemon_name": "Unknown_1015",
       "form_id": "0",
       "rank": 7,
-      "move_name": "アシッドボム",
+      "move_name": "とんぼがえり",
       "usage_rate": "33.3"
     },
     {
@@ -12014,7 +12014,7 @@
       "pokemon_name": "Unknown_1015",
       "form_id": "0",
       "rank": 9,
-      "move_name": "にどげり",
+      "move_name": "ちょうはつ",
       "usage_rate": "4.8"
     },
     {
@@ -12230,7 +12230,7 @@
       "pokemon_name": "Unknown_1019",
       "form_id": "0",
       "rank": 6,
-      "move_name": "ワイドブレイカー",
+      "move_name": "あさのひざし",
       "usage_rate": "13.6"
     },
     {
@@ -12238,7 +12238,7 @@
       "pokemon_name": "Unknown_1019",
       "form_id": "0",
       "rank": 7,
-      "move_name": "あさのひざし",
+      "move_name": "ワイドブレイカー",
       "usage_rate": "13.6"
     },
     {
@@ -12254,7 +12254,7 @@
       "pokemon_name": "Unknown_1019",
       "form_id": "0",
       "rank": 9,
-      "move_name": "にどげり",
+      "move_name": "ねごと",
       "usage_rate": "4.5"
     },
     {
@@ -12262,7 +12262,7 @@
       "pokemon_name": "Unknown_1019",
       "form_id": "0",
       "rank": 10,
-      "move_name": "ねごと",
+      "move_name": "にどげり",
       "usage_rate": "4.5"
     },
     {
@@ -12278,7 +12278,7 @@
       "pokemon_name": "Unknown_1020",
       "form_id": "0",
       "rank": 2,
-      "move_name": "りゅうせいぐん",
+      "move_name": "１０まんボルト",
       "usage_rate": "100.0"
     },
     {
@@ -12286,7 +12286,7 @@
       "pokemon_name": "Unknown_1020",
       "form_id": "0",
       "rank": 3,
-      "move_name": "１０まんボルト",
+      "move_name": "りゅうせいぐん",
       "usage_rate": "100.0"
     },
     {
@@ -12326,14 +12326,6 @@
       "pokemon_name": "Unknown_1021",
       "form_id": "0",
       "rank": 1,
-      "move_name": "じしん",
-      "usage_rate": "100.0"
-    },
-    {
-      "pokemon_id": "1022",
-      "pokemon_name": "Unknown_1021",
-      "form_id": "0",
-      "rank": 2,
       "move_name": "インファイト",
       "usage_rate": "100.0"
     },
@@ -12341,8 +12333,16 @@
       "pokemon_id": "1022",
       "pokemon_name": "Unknown_1021",
       "form_id": "0",
+      "rank": 2,
+      "move_name": "じしん",
+      "usage_rate": "100.0"
+    },
+    {
+      "pokemon_id": "1022",
+      "pokemon_name": "Unknown_1021",
+      "form_id": "0",
       "rank": 3,
-      "move_name": "Unknown_910",
+      "move_name": "つるぎのまい",
       "usage_rate": "100.0"
     },
     {
@@ -12350,7 +12350,7 @@
       "pokemon_name": "Unknown_1021",
       "form_id": "0",
       "rank": 4,
-      "move_name": "つるぎのまい",
+      "move_name": "Unknown_910",
       "usage_rate": "100.0"
     },
     {
@@ -14818,7 +14818,7 @@
       "pokemon_name": "エーフィ",
       "form_id": "0",
       "rank": 1,
-      "item_name": "おんみつマント",
+      "item_name": "ひかりのねんど",
       "usage_rate": "36.4"
     },
     {
@@ -14826,7 +14826,7 @@
       "pokemon_name": "エーフィ",
       "form_id": "0",
       "rank": 2,
-      "item_name": "ひかりのねんど",
+      "item_name": "おんみつマント",
       "usage_rate": "36.4"
     },
     {
@@ -14914,7 +14914,7 @@
       "pokemon_name": "ハッサム",
       "form_id": "0",
       "rank": 3,
-      "item_name": "オボンのみ",
+      "item_name": "きあいのタスキ",
       "usage_rate": "19.4"
     },
     {
@@ -14922,7 +14922,7 @@
       "pokemon_name": "ハッサム",
       "form_id": "0",
       "rank": 4,
-      "item_name": "きあいのタスキ",
+      "item_name": "オボンのみ",
       "usage_rate": "19.4"
     },
     {
@@ -15898,7 +15898,7 @@
       "pokemon_name": "ゴチルゼル",
       "form_id": "0",
       "rank": 2,
-      "item_name": "たべのこし",
+      "item_name": "オボンのみ",
       "usage_rate": "20.0"
     },
     {
@@ -15914,7 +15914,7 @@
       "pokemon_name": "ゴチルゼル",
       "form_id": "0",
       "rank": 4,
-      "item_name": "オボンのみ",
+      "item_name": "たべのこし",
       "usage_rate": "20.0"
     },
     {
@@ -16338,7 +16338,7 @@
       "pokemon_name": "ドヒドイデ",
       "form_id": "0",
       "rank": 3,
-      "item_name": "メンタルハーブ",
+      "item_name": "くろいヘドロ",
       "usage_rate": "13.3"
     },
     {
@@ -16346,7 +16346,7 @@
       "pokemon_name": "ドヒドイデ",
       "form_id": "0",
       "rank": 4,
-      "item_name": "くろいヘドロ",
+      "item_name": "メンタルハーブ",
       "usage_rate": "13.3"
     },
     {
@@ -16570,7 +16570,7 @@
       "pokemon_name": "ネクロズマ",
       "form_id": "1",
       "rank": 4,
-      "item_name": "たべのこし",
+      "item_name": "オボンのみ",
       "usage_rate": "3.7"
     },
     {
@@ -16578,7 +16578,7 @@
       "pokemon_name": "ネクロズマ",
       "form_id": "1",
       "rank": 5,
-      "item_name": "オボンのみ",
+      "item_name": "たべのこし",
       "usage_rate": "3.7"
     },
     {
@@ -16642,14 +16642,6 @@
       "pokemon_name": "ゴリランダー",
       "form_id": "0",
       "rank": 3,
-      "item_name": "ゴツゴツメット",
-      "usage_rate": "4.2"
-    },
-    {
-      "pokemon_id": "812",
-      "pokemon_name": "ゴリランダー",
-      "form_id": "0",
-      "rank": 4,
       "item_name": "グラスシード",
       "usage_rate": "4.2"
     },
@@ -16657,8 +16649,16 @@
       "pokemon_id": "812",
       "pokemon_name": "ゴリランダー",
       "form_id": "0",
-      "rank": 5,
+      "rank": 4,
       "item_name": "きせきのタネ",
+      "usage_rate": "4.2"
+    },
+    {
+      "pokemon_id": "812",
+      "pokemon_name": "ゴリランダー",
+      "form_id": "0",
+      "rank": 5,
+      "item_name": "ゴツゴツメット",
       "usage_rate": "4.2"
     },
     {
@@ -17002,7 +17002,7 @@
       "pokemon_name": "ウーラオス",
       "form_id": "1",
       "rank": 9,
-      "item_name": "エレキシード",
+      "item_name": "いのちのたま",
       "usage_rate": "0.5"
     },
     {
@@ -17010,7 +17010,7 @@
       "pokemon_name": "ウーラオス",
       "form_id": "1",
       "rank": 10,
-      "item_name": "いのちのたま",
+      "item_name": "エレキシード",
       "usage_rate": "0.5"
     },
     {
@@ -17266,14 +17266,6 @@
       "pokemon_name": "ガチグマ",
       "form_id": "1",
       "rank": 8,
-      "item_name": "エレキシード",
-      "usage_rate": "0.6"
-    },
-    {
-      "pokemon_id": "901",
-      "pokemon_name": "ガチグマ",
-      "form_id": "1",
-      "rank": 9,
       "item_name": "ノーマルジュエル",
       "usage_rate": "0.6"
     },
@@ -17281,8 +17273,16 @@
       "pokemon_id": "901",
       "pokemon_name": "ガチグマ",
       "form_id": "1",
-      "rank": 10,
+      "rank": 9,
       "item_name": "ラムのみ",
+      "usage_rate": "0.6"
+    },
+    {
+      "pokemon_id": "901",
+      "pokemon_name": "ガチグマ",
+      "form_id": "1",
+      "rank": 10,
+      "item_name": "エレキシード",
       "usage_rate": "0.6"
     },
     {
@@ -17666,7 +17666,7 @@
       "pokemon_name": "キラフロル",
       "form_id": "0",
       "rank": 9,
-      "item_name": "オボンのみ",
+      "item_name": "おんみつマント",
       "usage_rate": "0.3"
     },
     {
@@ -17674,7 +17674,7 @@
       "pokemon_name": "キラフロル",
       "form_id": "0",
       "rank": 10,
-      "item_name": "フィラのみ",
+      "item_name": "オボンのみ",
       "usage_rate": "0.3"
     },
     {
@@ -17730,7 +17730,7 @@
       "pokemon_name": "ヘイラッシャ",
       "form_id": "0",
       "rank": 7,
-      "item_name": "とつげきチョッキ",
+      "item_name": "とくせいガード",
       "usage_rate": "0.2"
     },
     {
@@ -17738,7 +17738,7 @@
       "pokemon_name": "ヘイラッシャ",
       "form_id": "0",
       "rank": 8,
-      "item_name": "とくせいガード",
+      "item_name": "とつげきチョッキ",
       "usage_rate": "0.2"
     },
     {
@@ -17858,7 +17858,7 @@
       "pokemon_name": "ドドゲザン",
       "form_id": "0",
       "rank": 4,
-      "item_name": "くろいメガネ",
+      "item_name": "たべのこし",
       "usage_rate": "5.3"
     },
     {
@@ -17866,7 +17866,7 @@
       "pokemon_name": "ドドゲザン",
       "form_id": "0",
       "rank": 5,
-      "item_name": "たべのこし",
+      "item_name": "くろいメガネ",
       "usage_rate": "5.3"
     },
     {
@@ -18346,7 +18346,7 @@
       "pokemon_name": "ディンルー",
       "form_id": "0",
       "rank": 8,
-      "item_name": "じゃくてんほけん",
+      "item_name": "おんみつマント",
       "usage_rate": "0.2"
     },
     {
@@ -18354,7 +18354,7 @@
       "pokemon_name": "ディンルー",
       "form_id": "0",
       "rank": 9,
-      "item_name": "おんみつマント",
+      "item_name": "じゃくてんほけん",
       "usage_rate": "0.2"
     },
     {
@@ -18626,7 +18626,7 @@
       "pokemon_name": "ピカチュウ",
       "form_id": "0",
       "rank": 2,
-      "item_name": "いのちのたま",
+      "item_name": "とつげきチョッキ",
       "usage_rate": "14.3"
     },
     {
@@ -18634,7 +18634,7 @@
       "pokemon_name": "ピカチュウ",
       "form_id": "0",
       "rank": 3,
-      "item_name": "とつげきチョッキ",
+      "item_name": "いのちのたま",
       "usage_rate": "14.3"
     },
     {
@@ -18972,7 +18972,7 @@
       "pokemon_name": "ベトベトン",
       "form_id": "1",
       "rank": 1,
-      "tera_type": "どく",
+      "tera_type": "ひこう",
       "usage_rate": "42.9"
     },
     {
@@ -18980,7 +18980,7 @@
       "pokemon_name": "ベトベトン",
       "form_id": "1",
       "rank": 2,
-      "tera_type": "ひこう",
+      "tera_type": "どく",
       "usage_rate": "42.9"
     },
     {
@@ -19068,7 +19068,7 @@
       "pokemon_name": "カイリュー",
       "form_id": "0",
       "rank": 3,
-      "tera_type": "じめん",
+      "tera_type": "ほのお",
       "usage_rate": "10.5"
     },
     {
@@ -19076,7 +19076,7 @@
       "pokemon_name": "カイリュー",
       "form_id": "0",
       "rank": 4,
-      "tera_type": "フェアリー",
+      "tera_type": "じめん",
       "usage_rate": "10.5"
     },
     {
@@ -19084,7 +19084,7 @@
       "pokemon_name": "カイリュー",
       "form_id": "0",
       "rank": 5,
-      "tera_type": "ほのお",
+      "tera_type": "フェアリー",
       "usage_rate": "10.5"
     },
     {
@@ -19156,7 +19156,7 @@
       "pokemon_name": "ハッサム",
       "form_id": "0",
       "rank": 2,
-      "tera_type": "あく",
+      "tera_type": "ひこう",
       "usage_rate": "9.1"
     },
     {
@@ -19164,7 +19164,7 @@
       "pokemon_name": "ハッサム",
       "form_id": "0",
       "rank": 3,
-      "tera_type": "ひこう",
+      "tera_type": "あく",
       "usage_rate": "9.1"
     },
     {
@@ -19860,7 +19860,7 @@
       "pokemon_name": "ランドロス",
       "form_id": "1",
       "rank": 4,
-      "tera_type": "ひこう",
+      "tera_type": "じめん",
       "usage_rate": "8.7"
     },
     {
@@ -19868,7 +19868,7 @@
       "pokemon_name": "ランドロス",
       "form_id": "1",
       "rank": 5,
-      "tera_type": "じめん",
+      "tera_type": "ひこう",
       "usage_rate": "8.7"
     },
     {
@@ -19964,7 +19964,7 @@
       "pokemon_name": "アシレーヌ",
       "form_id": "0",
       "rank": 2,
-      "tera_type": "どく",
+      "tera_type": "みず",
       "usage_rate": "33.3"
     },
     {
@@ -19972,7 +19972,7 @@
       "pokemon_name": "アシレーヌ",
       "form_id": "0",
       "rank": 3,
-      "tera_type": "みず",
+      "tera_type": "どく",
       "usage_rate": "33.3"
     },
     {
@@ -20052,7 +20052,7 @@
       "pokemon_name": "ルナアーラ",
       "form_id": "0",
       "rank": 5,
-      "tera_type": "エスパー",
+      "tera_type": "でんき",
       "usage_rate": "2.0"
     },
     {
@@ -20060,7 +20060,7 @@
       "pokemon_name": "ルナアーラ",
       "form_id": "0",
       "rank": 6,
-      "tera_type": "でんき",
+      "tera_type": "エスパー",
       "usage_rate": "2.0"
     },
     {
@@ -20180,7 +20180,7 @@
       "pokemon_name": "オーロンゲ",
       "form_id": "0",
       "rank": 4,
-      "tera_type": "ゴースト",
+      "tera_type": "ほのお",
       "usage_rate": "8.3"
     },
     {
@@ -20188,7 +20188,7 @@
       "pokemon_name": "オーロンゲ",
       "form_id": "0",
       "rank": 5,
-      "tera_type": "ほのお",
+      "tera_type": "ゴースト",
       "usage_rate": "8.3"
     },
     {
@@ -20268,7 +20268,7 @@
       "pokemon_name": "ザマゼンタ",
       "form_id": "0",
       "rank": 3,
-      "tera_type": "ドラゴン",
+      "tera_type": "みず",
       "usage_rate": "5.9"
     },
     {
@@ -20276,7 +20276,7 @@
       "pokemon_name": "ザマゼンタ",
       "form_id": "0",
       "rank": 4,
-      "tera_type": "みず",
+      "tera_type": "ドラゴン",
       "usage_rate": "5.9"
     },
     {
@@ -20348,7 +20348,7 @@
       "pokemon_name": "ウーラオス",
       "form_id": "1",
       "rank": 3,
-      "tera_type": "じめん",
+      "tera_type": "Unknown_99",
       "usage_rate": "7.8"
     },
     {
@@ -20356,7 +20356,7 @@
       "pokemon_name": "ウーラオス",
       "form_id": "1",
       "rank": 4,
-      "tera_type": "Unknown_99",
+      "tera_type": "じめん",
       "usage_rate": "7.8"
     },
     {
@@ -20516,7 +20516,7 @@
       "pokemon_name": "バドレックス",
       "form_id": "2",
       "rank": 8,
-      "tera_type": "こおり",
+      "tera_type": "Unknown_99",
       "usage_rate": "0.7"
     },
     {
@@ -20524,7 +20524,7 @@
       "pokemon_name": "バドレックス",
       "form_id": "2",
       "rank": 9,
-      "tera_type": "Unknown_99",
+      "tera_type": "こおり",
       "usage_rate": "0.7"
     },
     {
@@ -20572,7 +20572,7 @@
       "pokemon_name": "ガチグマ",
       "form_id": "0",
       "rank": 4,
-      "tera_type": "はがね",
+      "tera_type": "くさ",
       "usage_rate": "6.7"
     },
     {
@@ -20580,7 +20580,7 @@
       "pokemon_name": "ガチグマ",
       "form_id": "0",
       "rank": 5,
-      "tera_type": "くさ",
+      "tera_type": "はがね",
       "usage_rate": "6.7"
     },
     {
@@ -20636,7 +20636,7 @@
       "pokemon_name": "イダイトウ",
       "form_id": "0",
       "rank": 3,
-      "tera_type": "ノーマル",
+      "tera_type": "みず",
       "usage_rate": "15.4"
     },
     {
@@ -20644,7 +20644,7 @@
       "pokemon_name": "イダイトウ",
       "form_id": "0",
       "rank": 4,
-      "tera_type": "みず",
+      "tera_type": "ノーマル",
       "usage_rate": "15.4"
     },
     {
@@ -20692,7 +20692,7 @@
       "pokemon_name": "オオニューラ",
       "form_id": "0",
       "rank": 6,
-      "tera_type": "ノーマル",
+      "tera_type": "フェアリー",
       "usage_rate": "4.5"
     },
     {
@@ -20700,7 +20700,7 @@
       "pokemon_name": "オオニューラ",
       "form_id": "0",
       "rank": 7,
-      "tera_type": "フェアリー",
+      "tera_type": "ノーマル",
       "usage_rate": "4.5"
     },
     {
@@ -20796,7 +20796,7 @@
       "pokemon_name": "キョジオーン",
       "form_id": "0",
       "rank": 4,
-      "tera_type": "ひこう",
+      "tera_type": "フェアリー",
       "usage_rate": "4.2"
     },
     {
@@ -20804,7 +20804,7 @@
       "pokemon_name": "キョジオーン",
       "form_id": "0",
       "rank": 5,
-      "tera_type": "フェアリー",
+      "tera_type": "ひこう",
       "usage_rate": "4.2"
     },
     {
@@ -20844,7 +20844,7 @@
       "pokemon_name": "キラフロル",
       "form_id": "0",
       "rank": 2,
-      "tera_type": "あく",
+      "tera_type": "じめん",
       "usage_rate": "17.6"
     },
     {
@@ -20852,7 +20852,7 @@
       "pokemon_name": "キラフロル",
       "form_id": "0",
       "rank": 3,
-      "tera_type": "じめん",
+      "tera_type": "あく",
       "usage_rate": "17.6"
     },
     {
@@ -20916,7 +20916,7 @@
       "pokemon_name": "ヘイラッシャ",
       "form_id": "0",
       "rank": 5,
-      "tera_type": "はがね",
+      "tera_type": "ほのお",
       "usage_rate": "4.8"
     },
     {
@@ -20924,7 +20924,7 @@
       "pokemon_name": "ヘイラッシャ",
       "form_id": "0",
       "rank": 6,
-      "tera_type": "ほのお",
+      "tera_type": "はがね",
       "usage_rate": "4.8"
     },
     {
@@ -20964,7 +20964,7 @@
       "pokemon_name": "ドオー",
       "form_id": "0",
       "rank": 4,
-      "tera_type": "フェアリー",
+      "tera_type": "ほのお",
       "usage_rate": "8.3"
     },
     {
@@ -20972,7 +20972,7 @@
       "pokemon_name": "ドオー",
       "form_id": "0",
       "rank": 5,
-      "tera_type": "ほのお",
+      "tera_type": "フェアリー",
       "usage_rate": "8.3"
     },
     {
@@ -21116,7 +21116,7 @@
       "pokemon_name": "テツノワダチ",
       "form_id": "0",
       "rank": 4,
-      "tera_type": "フェアリー",
+      "tera_type": "いわ",
       "usage_rate": "3.7"
     },
     {
@@ -21124,7 +21124,7 @@
       "pokemon_name": "テツノワダチ",
       "form_id": "0",
       "rank": 5,
-      "tera_type": "いわ",
+      "tera_type": "フェアリー",
       "usage_rate": "3.7"
     },
     {
@@ -21340,7 +21340,7 @@
       "pokemon_name": "ディンルー",
       "form_id": "0",
       "rank": 5,
-      "tera_type": "みず",
+      "tera_type": "ひこう",
       "usage_rate": "5.1"
     },
     {
@@ -21348,7 +21348,7 @@
       "pokemon_name": "ディンルー",
       "form_id": "0",
       "rank": 6,
-      "tera_type": "ひこう",
+      "tera_type": "みず",
       "usage_rate": "5.1"
     },
     {
