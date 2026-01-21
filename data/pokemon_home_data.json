@@ -1,6 +1,6 @@
 {
   "season_name": "シーズン38",
-  "source_timestamp": 1768932009,
+  "source_timestamp": 1769018408,
   "single": {
     "ranking": {
       "pokemon": [
@@ -148,12 +148,12 @@
           "form": 1
         },
         {
-          "id": 812,
-          "form": 0
-        },
-        {
           "id": 898,
           "form": 1
+        },
+        {
+          "id": 812,
+          "form": 0
         },
         {
           "id": 889,
@@ -188,12 +188,12 @@
           "form": 0
         },
         {
-          "id": 987,
-          "form": 0
-        },
-        {
           "id": 876,
           "form": 1
+        },
+        {
+          "id": 987,
+          "form": 0
         },
         {
           "id": 645,
