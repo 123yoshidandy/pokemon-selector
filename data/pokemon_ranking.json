@@ -1,6 +1,6 @@
 {
   "season_name": "シーズン38",
-  "source_timestamp": 1769104807,
+  "source_timestamp": 1769191206,
   "single_ranking": [
     {
       "id": 1003,
@@ -129,12 +129,12 @@
       "form": 0
     },
     {
-      "id": 898,
-      "form": 2
-    },
-    {
       "id": 1008,
       "form": 0
+    },
+    {
+      "id": 898,
+      "form": 2
     },
     {
       "id": 892,
