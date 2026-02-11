@@ -1,6 +1,6 @@
 {
   "season_name": "シーズン39",
-  "source_timestamp": 1770750007,
+  "source_timestamp": 1770832808,
   "single": {
     "ranking": {
       "pokemon": [
@@ -57,11 +57,11 @@
           "form": 0
         },
         {
-          "id": 934,
+          "id": 472,
           "form": 0
         },
         {
-          "id": 472,
+          "id": 934,
           "form": 0
         },
         {
@@ -188,10 +188,6 @@
           "form": 0
         },
         {
-          "id": 861,
-          "form": 0
-        },
-        {
           "id": 792,
           "form": 0
         },
@@ -200,12 +196,16 @@
           "form": 0
         },
         {
-          "id": 591,
+          "id": 861,
           "form": 0
         },
         {
           "id": 876,
           "form": 1
+        },
+        {
+          "id": 591,
+          "form": 0
         },
         {
           "id": 1017,
