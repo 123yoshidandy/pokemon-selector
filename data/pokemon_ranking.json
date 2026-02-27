@@ -1,6 +1,6 @@
 {
   "season_name": "シーズン39",
-  "source_timestamp": 1772132407,
+  "source_timestamp": 1772215210,
   "single_ranking": [
     {
       "id": 1003,
@@ -87,12 +87,12 @@
       "form": 1
     },
     {
-      "id": 898,
-      "form": 1
-    },
-    {
       "id": 980,
       "form": 0
+    },
+    {
+      "id": 898,
+      "form": 1
     },
     {
       "id": 1018,
@@ -217,11 +217,11 @@
       "form": 0
     },
     {
-      "id": 981,
+      "id": 901,
       "form": 0
     },
     {
-      "id": 901,
+      "id": 981,
       "form": 0
     },
     {
