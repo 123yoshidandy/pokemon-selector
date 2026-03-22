@@ -1,6 +1,6 @@
 {
   "season_name": "シーズン40",
-  "source_timestamp": 1774112413,
+  "source_timestamp": 1774202408,
   "single_ranking": [
     {
       "id": 1003,
@@ -157,11 +157,11 @@
       "form": 0
     },
     {
-      "id": 641,
+      "id": 1007,
       "form": 0
     },
     {
-      "id": 1007,
+      "id": 641,
       "form": 0
     },
     {
@@ -189,12 +189,12 @@
       "form": 0
     },
     {
-      "id": 861,
-      "form": 0
-    },
-    {
       "id": 876,
       "form": 1
+    },
+    {
+      "id": 861,
+      "form": 0
     },
     {
       "id": 1017,
