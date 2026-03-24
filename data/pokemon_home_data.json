@@ -1,6 +1,6 @@
 {
   "season_name": "シーズン40",
-  "source_timestamp": 1774288811,
+  "source_timestamp": 1774378807,
   "single": {
     "ranking": {
       "pokemon": [
@@ -65,11 +65,11 @@
           "form": 0
         },
         {
-          "id": 472,
+          "id": 792,
           "form": 0
         },
         {
-          "id": 792,
+          "id": 472,
           "form": 0
         },
         {
@@ -164,19 +164,19 @@
           "form": 0
         },
         {
-          "id": 1007,
-          "form": 0
-        },
-        {
           "id": 641,
           "form": 0
         },
         {
-          "id": 547,
+          "id": 1007,
           "form": 0
         },
         {
           "id": 382,
+          "form": 0
+        },
+        {
+          "id": 547,
           "form": 0
         },
         {
