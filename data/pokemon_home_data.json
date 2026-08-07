@@ -1,6 +1,6 @@
 {
   "season_name": "シーズン41",
-  "source_timestamp": 1786057210,
+  "source_timestamp": 1786129209,
   "single": {
     "ranking": {
       "pokemon": [
@@ -37,11 +37,11 @@
           "form": 1
         },
         {
-          "id": 250,
+          "id": 977,
           "form": 0
         },
         {
-          "id": 977,
+          "id": 250,
           "form": 0
         },
         {
